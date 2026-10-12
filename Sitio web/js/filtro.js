@@ -1,21 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Captura de elementos DOM
+    // Referencias a elementos
     const selectCategoria = document.getElementById('select-categoria');
-    const chkGratis = document.getElementById('chk-gratis');
-    const chkTarjeta = document.getElementById('chk-tarjeta');
-    const chkRegistro = document.getElementById('chk-registro');
-    const chkPrivacidad = document.getElementById('chk-privacidad');
-    const chkDatos = document.getElementById('chk-datos');
     
+    const chkGratis100 = document.getElementById('chk-gratis-100');
+    const chkFreemium = document.getElementById('chk-freemium');
+    const chkSinRegistro = document.getElementById('chk-sin-registro');
+    const chkRegistro1Clic = document.getElementById('chk-registro-1clic');
+    const chkSinTarjeta = document.getElementById('chk-sin-tarjeta');
+    const chkPrivacidadAlta = document.getElementById('chk-privacidad-alta');
+
     const btnAplicar = document.getElementById('btn-aplicar');
     const btnLimpiar = document.getElementById('btn-limpiar');
     const inputBusqueda = document.getElementById('input-busqueda');
-    
+
     const cards = document.querySelectorAll('.card-tool');
     const contadorTexto = document.getElementById('contador-texto');
 
-    // Función principal para filtrar
     function filtrarHerramientas() {
         const catSeleccionada = selectCategoria.value;
         const textoBusqueda = inputBusqueda.value.toLowerCase().trim();
@@ -23,24 +24,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cards.forEach(card => {
             const catCard = card.getAttribute('data-categoria');
-            const esGratis = card.getAttribute('data-gratis') === 'true';
-            const sinTarjeta = card.getAttribute('data-tarjeta') === 'true';
-            const sinRegistro = card.getAttribute('data-registro') === 'true';
-            const respetaPrivacidad = card.getAttribute('data-privacidad') === 'true';
-            const noVendeDatos = card.getAttribute('data-datos') === 'true';
-            
-            const tituloYDesc = card.innerText.toLowerCase();
+            const gratuidadCard = card.getAttribute('data-gratuidad'); // '100gratis' o 'freemium'
+            const accesoCard = card.getAttribute('data-acceso');       // 'sinregistro' o 'registro1clic'
+            const sinTarjeta = card.getAttribute('data-sintarjeta') === 'true';
+            const privacidadAlta = card.getAttribute('data-privacidad') === 'alta';
 
-            // Lógica de coincidencia
+            const textoCard = card.innerText.toLowerCase();
+
+            // Lógica de coincidencia por filtros
             const coincideCategoria = (catSeleccionada === 'todas' || catCard === catSeleccionada);
-            const coincideGratis = !chkGratis.checked || esGratis;
-            const coincideTarjeta = !chkTarjeta.checked || sinTarjeta;
-            const coincideRegistro = !chkRegistro.checked || sinRegistro;
-            const coincidePrivacidad = !chkPrivacidad.checked || respetaPrivacidad;
-            const coincideDatos = !chkDatos.checked || noVendeDatos;
-            const coincideBusqueda = tituloYDesc.includes(textoBusqueda);
+            
+            // Filtro Nivel de Gratuidad (si se seleccionan ambos o ninguno, no descarta)
+            let coincideGratuidad = true;
+            if (chkGratis100.checked && !chkFreemium.checked) {
+                coincideGratuidad = (gratuidadCard === '100gratis');
+            } else if (!chkGratis100.checked && chkFreemium.checked) {
+                coincideGratuidad = (gratuidadCard === 'freemium');
+            }
 
-            if (coincideCategoria && coincideGratis && coincideTarjeta && coincideRegistro && coincidePrivacidad && coincideDatos && coincideBusqueda) {
+            // Filtro Acceso Inmediato
+            let coincideAcceso = true;
+            if (chkSinRegistro.checked && !chkRegistro1Clic.checked) {
+                coincideAcceso = (accesoCard === 'sinregistro');
+            } else if (!chkSinRegistro.checked && chkRegistro1Clic.checked) {
+                coincideAcceso = (accesoCard === 'registro1clic');
+            }
+
+            // Filtros de Garantía
+            const coincideTarjeta = !chkSinTarjeta.checked || sinTarjeta;
+            const coincidePrivacidad = !chkPrivacidadAlta.checked || privacidadAlta;
+
+            // Buscador por texto
+            const coincideTexto = textoCard.includes(textoBusqueda);
+
+            if (coincideCategoria && coincideGratuidad && coincideAcceso && coincideTarjeta && coincidePrivacidad && coincideTexto) {
                 card.style.display = 'block';
                 visibles++;
             } else {
@@ -52,23 +69,23 @@ document.addEventListener('DOMContentLoaded', () => {
         contadorTexto.textContent = `${visibles} herramientas encontradas`;
     }
 
-    // Eventos de botones
+    // Eventos
     btnAplicar.addEventListener('click', filtrarHerramientas);
 
     btnLimpiar.addEventListener('click', () => {
         selectCategoria.value = 'todas';
-        chkGratis.checked = false;
-        chkTarjeta.checked = false;
-        chkRegistro.checked = false;
-        chkPrivacidad.checked = false;
-        chkDatos.checked = false;
+        chkGratis100.checked = false;
+        chkFreemium.checked = false;
+        chkSinRegistro.checked = false;
+        chkRegistro1Clic.checked = false;
+        chkSinTarjeta.checked = false;
+        chkPrivacidadAlta.checked = false;
         inputBusqueda.value = '';
         filtrarHerramientas();
     });
 
-    // Búsqueda en tiempo real
     inputBusqueda.addEventListener('keyup', filtrarHerramientas);
 
-    // Filtrar inicialmente
+    // Filtrar al cargar
     filtrarHerramientas();
 });
