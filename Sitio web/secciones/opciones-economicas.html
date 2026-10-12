@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador de IA 100% Gratis y Segura - SolucionarIA</title>
+    <title>Buscador de IA Gratis y Segura - SolucionarIA</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../imagenes/Logo_solo.png">
     <!-- CSS Externo -->
@@ -34,8 +34,8 @@
     <!-- Banner Hero / Encabezado de Sección -->
     <section class="hero-sec">
         <div class="hero-sec-text">
-            <h1>Buscador de IA 100% Gratis y Segura</h1>
-            <p>Encuentra herramientas realmente gratuitas, sin tarjeta de crédito, sin registros ocultos y con privacidad respetada.</p>
+            <h1>Filtro Anti-Trampas: Directorio Transparente de IA</h1>
+            <p>Auditoría real de herramientas de inteligencia artificial: conoce de antemano el nivel de gratuidad, si requiere registro o tarjeta, y el manejo de tu privacidad.</p>
         </div>
         <div class="hero-sec-image">
             <img src="../imagenes/escudo-confianza.png" alt="Escudo de confianza y seguridad">
@@ -45,7 +45,7 @@
     <!-- Contenedor Principal: Filtros + Resultados -->
     <main class="main-container">
         
-        <!-- Panel Izquierdo: Filtros -->
+        <!-- Panel Izquierdo: Filtros Basados en la Auditoría Real -->
         <aside class="sidebar-filtros">
             <div class="filtro-grupo">
                 <label for="select-categoria"><strong>Tipo de herramienta</strong></label>
@@ -62,27 +62,34 @@
             <hr class="divider">
 
             <div class="filtro-grupo checkboxes">
-                <p><strong>Criterios de verificación:</strong></p>
-
+                <p><strong>Nivel de Gratuidad:</strong></p>
                 <label>
-                    <input type="checkbox" id="chk-gratis" checked>
+                    <input type="checkbox" id="chk-gratis-100">
                     100% Gratis
                 </label>
                 <label>
-                    <input type="checkbox" id="chk-tarjeta" checked>
-                    Sin tarjeta de crédito
+                    <input type="checkbox" id="chk-freemium">
+                    Freemium Generoso
+                </label>
+
+                <p class="subtitulo-filtro"><strong>Acceso Inmediato:</strong></p>
+                <label>
+                    <input type="checkbox" id="chk-sin-registro">
+                    Sin Registro (Probar en 1 clic)
                 </label>
                 <label>
-                    <input type="checkbox" id="chk-registro" checked>
-                    Sin registro oculto / Sin inicio
+                    <input type="checkbox" id="chk-registro-1clic">
+                    Registro rápido (Google / Email)
+                </label>
+
+                <p class="subtitulo-filtro"><strong>Garantías de Seguridad:</strong></p>
+                <label>
+                    <input type="checkbox" id="chk-sin-tarjeta">
+                    Sin Tarjeta Requerida
                 </label>
                 <label>
-                    <input type="checkbox" id="chk-privacidad" checked>
-                    Respeta tu privacidad
-                </label>
-                <label>
-                    <input type="checkbox" id="chk-datos" checked>
-                    No vende tus datos
+                    <input type="checkbox" id="chk-privacidad-alta">
+                    Archivos Privados (Alta Privacidad)
                 </label>
             </div>
 
@@ -96,224 +103,339 @@
         <section class="content-resultados">
             
             <div class="banner-garantia">
-                <p>🛡️ <strong>Solo recomendamos herramientas verificadas:</strong> precio real, registro transparente y prácticas de privacidad revisadas.</p>
+                <p>🛡️ <strong>Garantía de Transparencia:</strong> Evaluamos cada herramienta con criterios reales para que no caigas en cobros sorpresa ni suscripciones no deseadas.</p>
             </div>
 
             <div class="contador-resultados">
                 <span id="contador-texto">14 herramientas encontradas</span>
             </div>
 
-            <!-- Grilla dinámica de herramientas -->
+            <!-- Grilla dinámica de herramientas auditadas -->
             <div class="grid-herramientas" id="grid-herramientas">
                 
-                <!-- 1. NotebookLM -->
-                <article class="card-tool" data-categoria="estudios" data-gratis="true" data-tarjeta="true" data-registro="false" data-privacidad="true" data-datos="true">
-                    <h3>NotebookLM (Google)</h3>
-                    <p class="tool-desc">Subir PDFs y notas para guías de estudio.</p>
-                    <ul class="verificaciones">
-                        <li>✔ 100% gratis con Google</li>
-                        <li>✔ Sin tarjeta</li>
-                        <li>✔ Privacidad clara</li>
-                    </ul>
-                    <a href="https://notebooklm.google.com" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
-                    <!-- Tooltip Flotante -->
-                    <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Tus documentos subidos no se utilizan para entrenar modelos públicos de IA. Requiere cuenta Google para acceder.
-                    </div>
-                </article>
-
-                <!-- 2. Perplexity AI -->
-                <article class="card-tool" data-categoria="estudios" data-gratis="true" data-tarjeta="true" data-registro="true" data-privacidad="true" data-datos="true">
-                    <h3>Perplexity AI</h3>
-                    <p class="tool-desc">Búsqueda asistida por IA con fuentes en tiempo real.</p>
-                    <ul class="verificaciones">
-                        <li>✔ Capa gratuita amplia</li>
-                        <li>✔ Sin tarjeta</li>
-                        <li>✔ Política visible</li>
-                    </ul>
-                    <a href="https://www.perplexity.ai" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
-                    <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Permite realizar consultas directas sin inicio de sesión obligatorio en su versión web básica.
-                    </div>
-                </article>
-
-                <!-- 3. Claude -->
-                <article class="card-tool" data-categoria="estudios" data-gratis="true" data-tarjeta="true" data-registro="false" data-privacidad="true" data-datos="true">
-                    <h3>Claude (Anthropic)</h3>
-                    <p class="tool-desc">Análisis profundo de textos y ensayos.</p>
-                    <ul class="verificaciones">
-                        <li>✔ Acceso diario gratuito</li>
-                        <li>✔ Sin tarjeta</li>
-                        <li>✔ Datos protegidos</li>
-                    </ul>
-                    <a href="https://claude.ai" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
-                    <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Registro mediante correo. Control estricto de retención de datos según la política de privacidad de Anthropic.
-                    </div>
-                </article>
-
-                <!-- 4. Elicit -->
-                <article class="card-tool" data-categoria="estudios" data-gratis="true" data-tarjeta="true" data-registro="false" data-privacidad="true" data-datos="true">
-                    <h3>Elicit / Consensus</h3>
-                    <p class="tool-desc">Búsqueda de evidencia científica y papers.</p>
-                    <ul class="verificaciones">
-                        <li>✔ Resultados verificados</li>
-                        <li>✔ Sin tarjeta</li>
-                        <li>✔ Transparencia académica</li>
-                    </ul>
-                    <a href="https://elicit.com" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
-                    <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Búsqueda académica segura. La cuenta libre incluye créditos renovables sin datos bancarios.
-                    </div>
-                </article>
-
-                <!-- 5. Gamma App -->
-                <article class="card-tool" data-categoria="documentos" data-gratis="true" data-tarjeta="true" data-registro="false" data-privacidad="true" data-datos="true">
-                    <h3>Gamma App</h3>
-                    <p class="tool-desc">Presentaciones y documentos interactivos en minutos.</p>
-                    <ul class="verificaciones">
-                        <li>✔ 400 créditos gratis</li>
-                        <li>✔ Sin tarjeta</li>
-                        <li>✔ Sin cobros sorpresa</li>
-                    </ul>
-                    <a href="https://gamma.app" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
-                    <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Inicio de sesión con correo. No requiere tarjeta para usar los créditos iniciales gratuitos.
-                    </div>
-                </article>
-
-                <!-- 6. Canva Magic Design -->
-                <article class="card-tool" data-categoria="documentos" data-gratis="true" data-tarjeta="true" data-registro="false" data-privacidad="true" data-datos="true">
-                    <h3>Canva Magic Design</h3>
-                    <p class="tool-desc">Diseño visual rápido y maquetación escolar.</p>
-                    <ul class="verificaciones">
-                        <li>✔ Plan gratuito accesible</li>
-                        <li>✔ Sin tarjeta</li>
-                        <li>✔ Entorno seguro</li>
-                    </ul>
-                    <a href="https://www.canva.com" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
-                    <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Cuenta gratuita con acceso libre a las funciones básicas de diseño sin suscripciones automáticas.
-                    </div>
-                </article>
-
-                <!-- 7. LanguageTool -->
-                <article class="card-tool" data-categoria="documentos" data-gratis="true" data-tarjeta="true" data-registro="true" data-privacidad="true" data-datos="true">
-                    <h3>LanguageTool</h3>
-                    <p class="tool-desc">Corrección gramatical y reescritura en 1 clic.</p>
-                    <ul class="verificaciones">
-                        <li>✔ 100% Uso directo</li>
-                        <li>✔ Sin registro previo</li>
-                        <li>✔ Privacidad de texto</li>
-                    </ul>
-                    <a href="https://languagetool.org" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
-                    <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> No guarda los textos procesados en la extensión libre y se puede usar en la web sin registrarse.
-                    </div>
-                </article>
-
-                <!-- 8. Calorie Mama AI -->
-                <article class="card-tool" data-categoria="organizacion" data-gratis="true" data-tarjeta="true" data-registro="true" data-privacidad="true" data-datos="true">
-                    <h3>Calorie Mama AI</h3>
-                    <p class="tool-desc">Conteo de calorías reconociendo platillos por foto.</p>
-                    <ul class="verificaciones">
-                        <li>✔ Estimación por foto</li>
-                        <li>✔ Sin tarjeta</li>
-                        <li>✔ Privacidad de imágenes</li>
-                    </ul>
-                    <a href="https://www.caloriemama.ai" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
-                    <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Procesa las fotos de alimentos únicamente para la estimación nutricional sin almacenamiento público.
-                    </div>
-                </article>
-
-                <!-- 9. Goblin.tools -->
-                <article class="card-tool" data-categoria="organizacion" data-gratis="true" data-tarjeta="true" data-registro="true" data-privacidad="true" data-datos="true">
+                <!-- 1. Goblin.tools -->
+                <article class="card-tool" 
+                         data-categoria="organizacion" 
+                         data-gratuidad="100gratis" 
+                         data-acceso="sinregistro" 
+                         data-sintarjeta="true" 
+                         data-privacidad="alta">
                     <h3>Goblin.tools</h3>
-                    <p class="tool-desc">Desglose de tareas difíciles y ajuste de tono.</p>
-                    <ul class="verificaciones">
-                        <li>✔ 100% Gratuito</li>
-                        <li>✔ Sin registro</li>
-                        <li>✔ Cero datos almacenados</li>
-                    </ul>
+                    <p class="tool-desc">Desglose de tareas complejas en pasos sencillos.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-verde">100% Gratis</span>
+                        <span class="badge badge-azul">Sin Registro</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                    </div>
+
                     <a href="https://goblin.tools" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
                     <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Totalmente anónimo. No solicita registro ni guarda historial de navegación ni textos.
+                        <strong>Auditoría de Privacidad:</strong> Excelente. Funciona 100% libre en la web. No solicita datos personales ni almacena historial.
                     </div>
                 </article>
 
-                <!-- 10. Todoist IA -->
-                <article class="card-tool" data-categoria="organizacion" data-gratis="true" data-tarjeta="true" data-registro="false" data-privacidad="true" data-datos="true">
-                    <h3>Todoist / Notion AI</h3>
-                    <p class="tool-desc">Planificación de horarios y rutinas diarias.</p>
-                    <ul class="verificaciones">
-                        <li>✔ Plan base gratuito</li>
-                        <li>✔ Sin tarjeta</li>
-                        <li>✔ Control de agenda</li>
-                    </ul>
-                    <a href="https://todoist.com" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                <!-- 2. LanguageTool -->
+                <article class="card-tool" 
+                         data-categoria="documentos" 
+                         data-gratuidad="freemium" 
+                         data-acceso="sinregistro" 
+                         data-sintarjeta="true" 
+                         data-privacidad="alta">
+                    <h3>LanguageTool</h3>
+                    <p class="tool-desc">Corrección ortográfica y reescritura de texto.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-freemium">Capa Gratuita</span>
+                        <span class="badge badge-azul">Sin Registro en Web</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                    </div>
+
+                    <a href="https://languagetool.org" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
                     <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Requiere registro básico de usuario. Cumple con normativas estándar de protección de datos (GDPR).
+                        <strong>Auditoría de Privacidad:</strong> Buena. Uso directo en web sin iniciar sesión. Cumple normativas europeas GDPR.
                     </div>
                 </article>
 
-                <!-- 11. Wally AI -->
-                <article class="card-tool" data-categoria="finanzas" data-gratis="true" data-tarjeta="true" data-registro="false" data-privacidad="true" data-datos="true">
-                    <h3>Wally AI</h3>
-                    <p class="tool-desc">Seguimiento de gastos y presupuesto inteligente.</p>
-                    <ul class="verificaciones">
-                        <li>✔ Asistencia financiera</li>
-                        <li>✔ Sin cobros ocultos</li>
-                        <li>✔ Datos cifrados</li>
-                    </ul>
-                    <a href="https://wally.me" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                <!-- 3. NotebookLM (Google) -->
+                <article class="card-tool" 
+                         data-categoria="estudios" 
+                         data-gratuidad="100gratis" 
+                         data-acceso="registro1clic" 
+                         data-sintarjeta="true" 
+                         data-privacidad="alta">
+                    <h3>NotebookLM (Google)</h3>
+                    <p class="tool-desc">Generador de guías de estudio, resúmenes y audios sobre tus PDFs.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-verde">100% Gratis</span>
+                        <span class="badge badge-gris">Cuenta Google</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                        <span class="badge badge-privado">Archivos Privados</span>
+                    </div>
+
+                    <a href="https://notebooklm.google.com" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
                     <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Información bancaria cifrada de extremo a extremo. Opción gratuita para presupuestos personales.
+                        <strong>Auditoría de Privacidad:</strong> Alta. Google garantiza que los documentos cargados no se usan para entrenar modelos públicos.
                     </div>
                 </article>
 
-                <!-- 12. ChatGPT Finanzas -->
-                <article class="card-tool" data-categoria="finanzas" data-gratis="true" data-tarjeta="true" data-registro="false" data-privacidad="true" data-datos="true">
-                    <h3>ChatGPT (Prompt Finanzas)</h3>
-                    <p class="tool-desc">Plantillas de presupuesto en hojas de cálculo.</p>
-                    <ul class="verificaciones">
-                        <li>✔ Modelo base gratis</li>
-                        <li>✔ Sin tarjeta</li>
-                        <li>✔ Uso conversacional</li>
-                    </ul>
-                    <a href="https://chatgpt.com" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                <!-- 4. Perplexity AI -->
+                <article class="card-tool" 
+                         data-categoria="estudios" 
+                         data-gratuidad="freemium" 
+                         data-acceso="sinregistro" 
+                         data-sintarjeta="true" 
+                         data-privacidad="media">
+                    <h3>Perplexity AI</h3>
+                    <p class="tool-desc">Respuestas inmediatas con citas de la web en tiempo real.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-freemium">Freemium Generoso</span>
+                        <span class="badge badge-azul">Consultas sin Registro</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                    </div>
+
+                    <a href="https://www.perplexity.ai" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
                     <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Se puede optar por no autorizar el uso de chats para entrenamiento de modelos en la configuración.
+                        <strong>Auditoría de Privacidad:</strong> Media. Permite realizar búsquedas rápidas en web sin crear cuenta; guarda historial si se inicia sesión.
                     </div>
                 </article>
 
-                <!-- 13. DeepSeek Coder -->
-                <article class="card-tool" data-categoria="programacion" data-gratis="true" data-tarjeta="true" data-registro="true" data-privacidad="true" data-datos="true">
-                    <h3>DeepSeek Coder</h3>
-                    <p class="tool-desc">Explicación de código y corrección de errores.</p>
-                    <ul class="verificaciones">
-                        <li>✔ Acceso web gratis</li>
-                        <li>✔ Sin tarjeta</li>
-                        <li>✔ Gran precisión técnica</li>
-                    </ul>
+                <!-- 5. DeepSeek (Coder) -->
+                <article class="card-tool" 
+                         data-categoria="programacion" 
+                         data-gratuidad="100gratis" 
+                         data-acceso="sinregistro" 
+                         data-sintarjeta="true" 
+                         data-privacidad="media">
+                    <h3>DeepSeek (Coder)</h3>
+                    <p class="tool-desc">Explicación de código, algoritmos y depuración de errores.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-verde">100% Gratis Web</span>
+                        <span class="badge badge-azul">Prueba Directa</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                    </div>
+
                     <a href="https://www.deepseek.com" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
                     <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Uso gratuito desde la web oficial. No solicita tarjetas para pruebas ni generación de código.
+                        <strong>Auditoría de Privacidad:</strong> Media. Gratuito y accesible en web. Política estándar de procesamiento de datos en nube.
                     </div>
                 </article>
 
-                <!-- 14. Gemini Code Assist -->
-                <article class="card-tool" data-categoria="programacion" data-gratis="true" data-tarjeta="true" data-registro="false" data-privacidad="true" data-datos="true">
-                    <h3>Gemini Code Assist</h3>
-                    <p class="tool-desc">Autocompletado de código para desarrolladores.</p>
-                    <ul class="verificaciones">
-                        <li>✔ Nivel gratuito amplio</li>
-                        <li>✔ Sin tarjeta previa</li>
-                        <li>✔ Integrado en VS Code</li>
-                    </ul>
-                    <a href="https://codeassist.google" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                <!-- 6. Claude (Anthropic) -->
+                <article class="card-tool" 
+                         data-categoria="estudios" 
+                         data-gratuidad="freemium" 
+                         data-acceso="registro1clic" 
+                         data-sintarjeta="true" 
+                         data-privacidad="alta">
+                    <h3>Claude (Anthropic)</h3>
+                    <p class="tool-desc">Análisis profundo de lecturas y redacción de ensayos.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-freemium">Límite Diario Gratis</span>
+                        <span class="badge badge-gris">Registro Email</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                        <span class="badge badge-privado">Alta Protección</span>
+                    </div>
+
+                    <a href="https://claude.ai" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
                     <div class="tooltip-info">
-                        <strong>Política de Datos:</strong> Funciona bajo las políticas de privacidad y protección de código de Google Cloud para desarrolladores.
+                        <strong>Auditoría de Privacidad:</strong> Alta. Requiere email/teléfono. Control estricto de seguridad y retención de datos.
+                    </div>
+                </article>
+
+                <!-- 7. Gamma App -->
+                <article class="card-tool" 
+                         data-categoria="documentos" 
+                         data-gratuidad="freemium" 
+                         data-acceso="registro1clic" 
+                         data-sintarjeta="true" 
+                         data-privacidad="media">
+                    <h3>Gamma App</h3>
+                    <p class="tool-desc">Generación de presentaciones y documentos estructurados.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-freemium">400 Créditos Gratis</span>
+                        <span class="badge badge-gris">Registro con Email</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                    </div>
+
+                    <a href="https://gamma.app" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
+                    <div class="tooltip-info">
+                        <strong>Auditoría de Privacidad:</strong> Estándar. Permite crear proyectos completos con créditos gratuitos iniciales sin datos bancarios.
+                    </div>
+                </article>
+
+                <!-- 8. Elicit / Consensus -->
+                <article class="card-tool" 
+                         data-categoria="estudios" 
+                         data-gratuidad="freemium" 
+                         data-acceso="registro1clic" 
+                         data-sintarjeta="true" 
+                         data-privacidad="alta">
+                    <h3>Elicit / Consensus</h3>
+                    <p class="tool-desc">Búsqueda de evidencia académica y papers científicos.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-freemium">Créditos de Inicio</span>
+                        <span class="badge badge-gris">Registro con Email</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                        <span class="badge badge-privado">Uso Académico</span>
+                    </div>
+
+                    <a href="https://elicit.com" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
+                    <div class="tooltip-info">
+                        <strong>Auditoría de Privacidad:</strong> Buena. Enfoque riguroso en investigación científica sin solicitud de método de pago.
+                    </div>
+                </article>
+
+                <!-- 9. Canva / Tome AI -->
+                <article class="card-tool" 
+                         data-categoria="documentos" 
+                         data-gratuidad="freemium" 
+                         data-acceso="registro1clic" 
+                         data-sintarjeta="true" 
+                         data-privacidad="media">
+                    <h3>Canva / Tome AI</h3>
+                    <p class="tool-desc">Maquetación visual rápida para láminas y diapositivas.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-freemium">Freemium Generoso</span>
+                        <span class="badge badge-gris">Registro 1 Clic</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                    </div>
+
+                    <a href="https://www.canva.com" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
+                    <div class="tooltip-info">
+                        <strong>Auditoría de Privacidad:</strong> Estándar. Amplia variedad de funciones en el nivel gratuito para estudiantes.
+                    </div>
+                </article>
+
+                <!-- 10. QuillBot -->
+                <article class="card-tool" 
+                         data-categoria="documentos" 
+                         data-gratuidad="freemium" 
+                         data-acceso="sinregistro" 
+                         data-sintarjeta="true" 
+                         data-privacidad="media">
+                    <h3>QuillBot</h3>
+                    <p class="tool-desc">Parafraseo y reescritura rápida de párrafos.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-freemium">Límite de Palabras</span>
+                        <span class="badge badge-azul">Sin Registro</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                    </div>
+
+                    <a href="https://quillbot.com" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
+                    <div class="tooltip-info">
+                        <strong>Auditoría de Privacidad:</strong> Estándar. Permite probar y reescribir textos directamente en el navegador sin crear cuenta.
+                    </div>
+                </article>
+
+                <!-- 11. Todoist / Notion AI -->
+                <article class="card-tool" 
+                         data-categoria="organizacion" 
+                         data-gratuidad="freemium" 
+                         data-acceso="registro1clic" 
+                         data-sintarjeta="true" 
+                         data-privacidad="alta">
+                    <h3>Todoist / Notion AI</h3>
+                    <p class="tool-desc">Organización de agendas, listas de estudio y rutinas.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-freemium">Plan Base Gratis</span>
+                        <span class="badge badge-gris">Registro Necesario</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                    </div>
+
+                    <a href="https://todoist.com" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
+                    <div class="tooltip-info">
+                        <strong>Auditoría de Privacidad:</strong> Alta. Gestión estructurada de hábitos respetando normativas de privacidad corporativa.
+                    </div>
+                </article>
+
+                <!-- 12. Gemini Code Assist -->
+                <article class="card-tool" 
+                         data-categoria="programacion" 
+                         data-gratuidad="100gratis" 
+                         data-acceso="registro1clic" 
+                         data-sintarjeta="true" 
+                         data-privacidad="alta">
+                    <h3>Gemini Code Assist</h3>
+                    <p class="tool-desc">Asistencia de programación y autocompletado en VS Code.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-verde">Plan Indiv. Gratis</span>
+                        <span class="badge badge-gris">Cuenta Google</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                        <span class="badge badge-privado">Google Cloud</span>
+                    </div>
+
+                    <a href="https://codeassist.google" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
+                    <div class="tooltip-info">
+                        <strong>Auditoría de Privacidad:</strong> Alta. Respaldado por las políticas de protección de datos de código de Google Cloud.
+                    </div>
+                </article>
+
+                <!-- 13. Calorie Mama / Passio AI -->
+                <article class="card-tool" 
+                         data-categoria="organizacion" 
+                         data-gratuidad="freemium" 
+                         data-acceso="registro1clic" 
+                         data-sintarjeta="true" 
+                         data-privacidad="media">
+                    <h3>Calorie Mama / Passio AI</h3>
+                    <p class="tool-desc">Conteo de calorías reconociendo alimentos por foto.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-freemium">Prueba Gratuita</span>
+                        <span class="badge badge-gris">Registro en App</span>
+                        <span class="badge badge-dorado">Sin Tarjeta</span>
+                    </div>
+
+                    <a href="https://www.caloriemama.ai" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
+                    <div class="tooltip-info">
+                        <strong>Auditoría de Privacidad:</strong> Variable. Las aplicaciones móviles solicitan permisos de cámara para el reconocimiento visual.
+                    </div>
+                </article>
+
+                <!-- 14. Wally AI / Cleo -->
+                <article class="card-tool" 
+                         data-categoria="finanzas" 
+                         data-gratuidad="freemium" 
+                         data-acceso="registro1clic" 
+                         data-sintarjeta="true" 
+                         data-privacidad="media">
+                    <h3>Wally AI / Cleo</h3>
+                    <p class="tool-desc">Categorización de gastos y consejos de ahorro personal.</p>
+
+                    <div class="badges-container">
+                        <span class="badge badge-freemium">Modo Gratuito</span>
+                        <span class="badge badge-gris">Registro Obligatorio</span>
+                        <span class="badge badge-dorado">Sin Tarjeta Inicial</span>
+                    </div>
+
+                    <a href="https://wally.me" target="_blank" rel="noopener" class="btn-visitar">Visitar sitio</a>
+                    
+                    <div class="tooltip-info">
+                        <strong>Auditoría de Privacidad:</strong> Sensible. Maneja datos de presupuesto. Cifrado de nivel bancario para seguridad de usuario.
                     </div>
                 </article>
 
