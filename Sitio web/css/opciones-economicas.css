@@ -11,21 +11,31 @@ body {
     background-color: #f8fafc;
 }
 
-/* Header */
+/* Header unificado */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 10px 40px;          /* Unifica espacio superior/inferior */
+    height: 80px;                 /* Altura idéntica a principal.css */
     background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-sizing: border-box;       /* Mantiene dimensiones exactas */
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    max-height: 45px;
+    height: 65px;                 /* Aumenta el logo de 45px a 65px para mayor visibilidad */
+    max-height: 65px;
+    width: auto;
+    object-fit: contain;
 }
 
 .nav ul {
