@@ -24,8 +24,9 @@
             </ul>
         </nav>
         <div class="search-bar">
-            <input type="text" placeholder="Buscar...">
-            <button type="button">🔍 Buscar</button>
+            <!-- Se agregan IDs para capturar los eventos en JavaScript -->
+            <input type="text" id="input-busqueda" placeholder="Buscar herramienta o tarea...">
+            <button type="button" id="btn-busqueda">🔍 Buscar</button>
         </div>
     </header>
 
@@ -62,7 +63,6 @@
                 <img src="imagenes/herramientas.png" alt="Otras alternativas">
                 <h3>Opciones más económicas</h3>
             </a>
-            
         </div>
     </section>
 
@@ -76,12 +76,12 @@
             <table class="ia-table">
                 <thead>
                     <tr>
-                        <th>LOGO de IA</th>
+                        <th>Logo de IA</th>
                         <th>Nombre y breve descripción</th>
                         <th>Enlace al sitio oficial</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="tabla-cuerpo">
                     <!-- 1. Estudios, Investigación y Cuestionarios -->
                     <tr>
                         <td><img src="imagenes/notebooklm-logo.png" alt="NotebookLM" class="table-logo"></td>
@@ -140,13 +140,13 @@
 
                     <!-- 4. Finanzas Personales e Inversiones Básicas -->
                     <tr>
-                        <td><img src="imagenes/wally-logo.png" alt="Wally AI" class="table-logo"></td>
-                        <td><strong>Wally AI / Cleo:</strong> Seguimiento de gastos diarios, categorización de ingresos y consejos automatizados de ahorro e inversión.</td>
-                        <td><a href="https://wally.me" target="_blank" rel="noopener">Visitar sitio</a></td>
+                        <td><img src="imagenes/ynab-logo.png" alt="YNAB AI" class="table-logo"></td>
+                        <td><strong>YNAB (You Need A Budget):</strong> Gestión presupuestaria basada en la web, categorización inteligente de gastos y proyección de ahorros personales.</td>
+                        <td><a href="https://www.ynab.com" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                     <tr>
-                        <td><img src="imagenes/chatgpt-logo.png" alt="ChatGPT Finanzas" class="table-logo"></td>
-                        <td><strong>ChatGPT (Prompts Finanzas):</strong> Estructura presupuestos detallados en Excel/Google Sheets usando plantillas conversacionales.</td>
+                        <td><img src="imagenes/chatgpt-logo.png" alt="ChatGPT" class="table-logo"></td>
+                        <td><strong>ChatGPT:</strong> Generación de textos, lluvia de ideas, resolución de dudas complejas, asistencia en programación y automatización de tareas generales.</td>
                         <td><a href="https://chatgpt.com" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
 
@@ -154,19 +154,19 @@
                     <tr>
                         <td><img src="imagenes/deepseek-logo.png" alt="DeepSeek Coder" class="table-logo"></td>
                         <td><strong>DeepSeek (Coder):</strong> Explicación de algoritmos, depuración de errores (debugging) y escritura de código paso a paso.</td>
-                        <td><a href="https://www.deepseek.com" target="_blank" rel="noopener">Visitar sitio</a></td>
+                        <td><a href="https://www.deepseek.com/en/" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                     <tr>
-                        <td><img src="imagenes/gemini-code-logo.png" alt="Gemini Code Assist" class="table-logo"></td>
-                        <td><strong>Gemini Code Assist:</strong> Autocompletado de código y asistencia en tiempo real dentro de editores como VS Code.</td>
-                        <td><a href="https://codeassist.google" target="_blank" rel="noopener">Visitar sitio</a></td>
+                        <td><img src="imagenes/gemini-logo.png" alt="Google Gemini" class="table-logo"></td>
+                        <td><strong>Google Gemini:</strong> Asistente de IA multimodal para redacción de textos, análisis de documentos, lluvia de ideas y resolución de consultas generales desde el navegador.</td>
+                        <td><a href="https://gemini.google.com" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div class="btn-container">
-            <a href="#" class="btn-explorar">Explorar más herramientas</a>
+            <a href="secciones/opciones-economicas.html" class="btn-explorar">Explorar herramientas accesibles</a>
         </div>
     </section>
 
@@ -183,9 +183,11 @@
 
     <!-- Pie de página -->
     <footer class="footer">
-        <p>2026. TPI desarrolladores</p>
-        <p>Hecho por: Tu Nombre / Equipo</p>
+        <p>2026. solucionarIA</p>
+        <p>Hecho por: TPI desarrolladores</p>
     </footer>
 
+    <!-- Enlace al script de funcionalidad del buscadorPrincipal -->
+    <script src="js/buscadorPrincipal.js"></script>
 </body>
 </html>
