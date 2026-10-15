@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
         seleccion[moduloActual] = id;
         tituloVista.textContent = prompt.vistaTitulo;
         iconoVista.textContent = prompt.vistaIcono;
-        resultadoVista.innerHTML = prompt.ejemplo; // Ejemplos fijos definidos en este archivo, no contenido externo.
+        resultadoVista.innerHTML = prompt.ejemplo; 
 
         lista.querySelectorAll('.prompt-card').forEach(tarjeta => {
             const activo = tarjeta.dataset.id === id;

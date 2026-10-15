@@ -1,11 +1,4 @@
 
-/* ==============================================
-   ESTILOS EXCLUSIVOS DE ESTUDIOS - SOLUCIONARIA
-   Se carga DESPUÉS de principal.css
-   ============================================== */
-
-/* 1. ESTILOS GENERALES */
-
 *,
 *::before,
 *::after {
@@ -19,8 +12,6 @@ body.site-body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-/* 2. ENCABEZADO Y PIE DE PÁGINA DEL LÍDER */
 
 .logo img {
     max-height: 45px;
@@ -46,7 +37,6 @@ body.site-body {
 }
 
 
-/* 3. BANNER SUPERIOR DE ESTUDIOS */
 
 .estudios-hero {
     display: flex;
@@ -91,7 +81,7 @@ body.site-body {
 }
 
 
-/* 4. DISTRIBUCIÓN DE LAS TRES COLUMNAS */
+/*DISTRIBUCIÓN DE LAS TRES COLUMNAS */
 
 .estudios-layout {
     display: grid;
@@ -109,7 +99,7 @@ body.site-body {
 }
 
 
-/* 5. PANEL IZQUIERDO - BREVE TUTORIAL */
+/*BREVE TUTORIAL */
 
 .estudios-tutorial {
     padding: 24px 17px;
@@ -168,7 +158,7 @@ body.site-body {
 }
 
 
-/* 7. PESTAÑAS DE LOS TRES MÓDULOS */
+/*PESTAÑAS DE LOS TRES MÓDULOS */
 
 .estudios-tabs {
     display: grid;
@@ -217,7 +207,7 @@ body.site-body {
 }
 
 
-/* 8. CUADRÍCULA DE TARJETAS DE PROMPTS */
+/* CUADRÍCULA DE TARJETAS DE PROMPTS */
 
 .prompts-grid {
     display: grid;
@@ -249,7 +239,7 @@ body.site-body {
 }
 
 
-/* 9. CONTENIDO DE CADA TARJETA */
+/*CONTENIDO DE CADA TARJETA */
 
 .prompt-seleccionar {
     display: block;
@@ -305,7 +295,7 @@ body.site-body {
 }
 
 
-/* 10. BOTONES PARA COPIAR PROMPTS */
+/* BOTONES PARA COPIAR PROMPTS */
 
 .prompt-acciones {
     display: flex;
@@ -347,7 +337,7 @@ body.site-body {
 }
 
 
-/* 12. PANEL DERECHO - VISTA PREVIA */
+/*VISTA PREVIA */
 
 .estudios-vista-previa {
     padding: 20px 14px;
@@ -388,7 +378,7 @@ body.site-body {
 }
 
 
-/* 13. CONTENIDO DE LA VISTA PREVIA */
+/*CONTENIDO DE LA VISTA PREVIA */
 
 .vista-resultado {
     padding: 15px;
@@ -424,9 +414,7 @@ body.site-body {
 }
 
 
-/* ==============================================
-   14. DISEÑO RESPONSIVE
-   ============================================== */
+/*DISEÑO RESPONSIVE */
 
 /* Pantallas menores a 1250px */
 
