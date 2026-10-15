@@ -1,0 +1,478 @@
+/* Estilos de la sección Hogar y Finanzas ("Atajos de la Vida Real") */
+/* Encabezado, redes y pie copiados de opciones-economicas.css para mantener la misma plantilla */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1e293b;
+    background-color: #f8fafc;
+}
+
+/* Colores de la marca */
+:root {
+    --azul-marino: #1F2A8A;
+    --azul: #102CAA;
+    --celeste: #40D0E0;
+}
+
+/* Header unificado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 65px;
+    max-height: 65px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a.activo {
+    color: #00b4d8;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+}
+
+/* Migas de pan (breadcrumb) */
+.breadcrumb {
+    margin: 20px 40px 0 40px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb li + li::before {
+    content: "›";
+    margin-right: 8px;
+    color: #94a3b8;
+}
+
+.breadcrumb a {
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Hero */
+.hero-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px 40px;
+    margin: 20px 40px;
+    background-color: #e0f2fe;
+    border: 1px solid #bae6fd;
+    border-radius: 12px;
+}
+
+.hero-sec-text h1 {
+    margin: 0 0 10px 0;
+    color: var(--azul-marino);
+    font-size: 1.8rem;
+}
+
+.hero-sec-text p {
+    margin: 0;
+    color: #334155;
+    max-width: 650px;
+}
+
+.hero-sec-image img {
+    max-height: 140px;
+    border-radius: 10px;
+}
+
+/* Bloques de contenido */
+.bloque {
+    padding: 30px 40px;
+    margin: 20px 40px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.bloque h2 {
+    margin-top: 0;
+    color: var(--azul-marino);
+}
+
+.bloque h2.titulo-paso {
+    margin-top: 30px;
+}
+
+.bloque-intro {
+    color: #475569;
+    margin-top: -5px;
+}
+
+/* Tarjetas de atajos (portada) */
+.grid-atajos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card-atajo {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #93c5fd;
+    border-top: 5px solid var(--celeste);
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-atajo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+
+.card-icono {
+    font-size: 2.2rem;
+}
+
+.card-atajo h3 {
+    margin: 10px 0;
+    color: var(--azul-marino);
+}
+
+.card-atajo p {
+    font-size: 0.92rem;
+    color: #475569;
+    flex: 1;
+}
+
+.card-cta {
+    font-weight: 600;
+    color: var(--azul);
+}
+
+/* ¿Cómo funciona? (3 pasos) */
+.pasos {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    counter-reset: paso;
+}
+
+.pasos li {
+    counter-increment: paso;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.pasos li::before {
+    content: counter(paso);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: var(--azul);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Formulario del atajo */
+.form-atajo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-ancho {
+    grid-column: 1 / -1;
+}
+
+.campo label {
+    font-weight: 600;
+    color: var(--azul-marino);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.campo textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.campo small {
+    color: #64748b;
+}
+
+/* Caja con el prompt generado */
+.caja-prompt {
+    position: relative;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.caja-prompt pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.acciones-prompt {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn-copiar,
+.btn-ia {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-copiar {
+    background-color: var(--celeste);
+    color: var(--azul-marino);
+    border: none;
+}
+
+.btn-copiar:hover {
+    background-color: #2fb8c7;
+}
+
+.btn-ia {
+    background-color: var(--azul);
+    color: #ffffff;
+    border: 1px solid var(--azul);
+}
+
+.btn-ia:hover {
+    background-color: var(--azul-marino);
+}
+
+.aviso-copiado {
+    color: #15803d;
+    font-weight: 600;
+}
+
+/* Tabla de pros y contras */
+.tabla-pros {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-pros th,
+.tabla-pros td {
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tabla-pros th {
+    color: var(--azul-marino);
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+/* Botones para compartir */
+.compartir {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-compartir {
+    padding: 8px 18px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.btn-facebook { background-color: #1877f2; }
+.btn-x { background-color: #0f172a; }
+.btn-whatsapp { background-color: #16a34a; }
+
+/* Referencias y uso de IA */
+.referencias {
+    font-size: 0.9rem;
+}
+
+.referencias ul {
+    padding-left: 20px;
+}
+
+.referencias a {
+    color: var(--azul);
+    word-break: break-word;
+}
+
+.nota-ia {
+    background-color: #f1f5f9;
+    border-left: 4px solid var(--celeste);
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+/* Redes y Footer */
+.section-redes, .footer {
+    padding: 20px 40px;
+    margin: 20px 40px;
+    background-color: #bbf7d0;
+    border-radius: 12px;
+}
+
+.section-redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+/* Celulares y tabletas */
+@media (max-width: 900px) {
+    .header {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+        padding: 10px 16px;
+        position: static;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .search-bar,
+    .search-bar input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .breadcrumb,
+    .hero-sec,
+    .bloque,
+    .section-redes,
+    .footer {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .hero-sec,
+    .bloque {
+        padding: 20px;
+    }
+
+    .hero-sec {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .tabla-pros {
+        display: block;
+        overflow-x: auto;
+    }
+}
