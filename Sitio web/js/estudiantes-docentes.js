@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prompts: [
                 {
                     id: 'r1',
-                    imagen: '../imagenes/prompts-estudios/resumen-general.png',
+                    imagen: '../../imagenes/prompts-estudios/resumen-general.png',
                     titulo: 'Resumen general',
                     texto: 'Actúa como tutor de [asignatura]. Resume el siguiente texto o PDF para un estudiante de [nivel]. Incluye idea central, cinco conceptos clave y una conclusión breve. Usa solo el contenido proporcionado y señala cualquier dato que falte.',
                     vistaTitulo: 'Ejemplo de resumen general',
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'r2',
-                    imagen: '../imagenes/prompts-estudios/puntos-clave.png',
+                    imagen: '../../imagenes/prompts-estudios/puntos-clave.png',
                     titulo: 'Puntos clave',
                     texto: 'Analiza [texto o documento] y extrae las ocho ideas más importantes. Ordénalas por relevancia, explica cada una en una frase y menciona la sección o página cuando sea posible. No repitas ideas ni agregues información externa.',
                     vistaTitulo: 'Ejemplo de puntos clave',
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'r3',
-                    imagen: '../imagenes/prompts-estudios/mapa-conceptual.png',
+                    imagen: '../../imagenes/prompts-estudios/mapa-conceptual.png',
                     titulo: 'Mapa conceptual',
                     texto: 'A partir de [tema o texto], construye un mapa conceptual en formato de árbol: concepto central, cuatro ramas principales, subconceptos y palabras de enlace. Explica las relaciones entre ideas y evita agregar conceptos que no aparezcan en el material.',
                     vistaTitulo: 'Ejemplo de mapa conceptual',
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'r4',
-                    imagen: '../imagenes/prompts-estudios/explicacion-sencilla.png',
+                    imagen: '../../imagenes/prompts-estudios/explicacion-sencilla.png',
                     titulo: 'Explicación sencilla',
                     texto: 'Explícame [concepto] como si fuera estudiante de [nivel]. Usa palabras sencillas, una analogía cotidiana, dos ejemplos y tres preguntas cortas para comprobar si comprendí. Aclara cualquier simplificación importante.',
                     vistaTitulo: 'Ejemplo de explicación sencilla',
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'r5',
-                    imagen: '../imagenes/prompts-estudios/resumen-por-secciones.png',
+                    imagen: '../../imagenes/prompts-estudios/resumen-por-secciones.png',
                     titulo: 'Resumen por secciones',
                     texto: 'Divide [documento] según sus títulos y subtítulos. Para cada sección, escribe un resumen de tres oraciones, dos términos importantes y una posible pregunta de examen. Conserva el orden original y no inventes apartados.',
                     vistaTitulo: 'Ejemplo de resumen por secciones',
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'r6',
-                    imagen: '../imagenes/prompts-estudios/preguntas-repaso.png',
+                    imagen: '../../imagenes/prompts-estudios/preguntas-repaso.png',
                     titulo: 'Preguntas de repaso',
                     texto: 'Usa únicamente [texto o apuntes] para crear diez preguntas de repaso: cuatro fáciles, cuatro intermedias y dos difíciles. Coloca las respuestas al final e indica de qué parte del material se obtuvo cada respuesta.',
                     vistaTitulo: 'Ejemplo de repaso',
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prompts: [
                 {
                     id: 'e1',
-                    imagen: '../imagenes/prompts-estudios/opcion-multiple.png',
+                    imagen: '../../imagenes/prompts-estudios/opcion-multiple.png',
                     titulo: 'Opción múltiple',
                     texto: 'Actúa como docente de [asignatura]. Crea diez preguntas de opción múltiple sobre [tema], con cuatro opciones y una sola correcta. Combina dificultad básica e intermedia. Al final, entrega la clave y una explicación breve de cada respuesta.',
                     vistaTitulo: 'Ejemplo de cuestionario',
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'e2',
-                    imagen: '../imagenes/prompts-estudios/simulacro-examen.png',
+                    imagen: '../../imagenes/prompts-estudios/simulacro-examen.png',
                     titulo: 'Simulacro de examen',
                     texto: 'Prepara un simulacro de examen de [asignatura] sobre [temas] para [nivel], con duración estimada de [minutos]. Incluye cinco preguntas de selección, cuatro de respuesta corta y un caso práctico. Presenta la solución en una sección separada.',
                     vistaTitulo: 'Ejemplo de simulacro',
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'e3',
-                    imagen: '../imagenes/prompts-estudios/tarjetas-memoria.png',
+                    imagen: '../../imagenes/prompts-estudios/tarjetas-memoria.png',
                     titulo: 'Tarjetas de memoria',
                     texto: 'Convierte [apuntes] en doce tarjetas de estudio. En el frente coloca una pregunta concreta; en el reverso, una respuesta de máximo dos oraciones. Prioriza definiciones, diferencias y conceptos que suelen confundirse.',
                     vistaTitulo: 'Ejemplo de tarjetas',
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'e4',
-                    imagen: '../imagenes/prompts-estudios/ejercicios-guiados.png',
+                    imagen: '../../imagenes/prompts-estudios/ejercicios-guiados.png',
                     titulo: 'Ejercicios guiados',
                     texto: 'Sé mi tutor de [matemáticas u otra materia]. Propón tres ejercicios de [tema] de dificultad creciente. Dame una pista por vez y espera mi intento antes de mostrar el siguiente paso. Corrige mis errores sin dar toda la respuesta al inicio.',
                     vistaTitulo: 'Ejemplo de ejercicio guiado',
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'e5',
-                    imagen: '../imagenes/prompts-estudios/revisar-respuestas.png',
+                    imagen: '../../imagenes/prompts-estudios/revisar-respuestas.png',
                     titulo: 'Revisar respuestas',
                     texto: 'Revisa mi respuesta a [pregunta] usando estos criterios: exactitud, claridad y justificación. Mi respuesta es: [respuesta]. Señala aciertos y errores, explica cómo mejorarla y ofrece una versión corregida sin cambiar mi intención.',
                     vistaTitulo: 'Ejemplo de retroalimentación',
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'e6',
-                    imagen: '../imagenes/prompts-estudios/plan-repaso.png',
+                    imagen: '../../imagenes/prompts-estudios/plan-repaso.png',
                     titulo: 'Plan de repaso',
                     texto: 'Diseña un plan de repaso de [número] días para mi examen de [materia]. Dispongo de [minutos] diarios y debo estudiar [temas]. Prioriza mis temas difíciles, incluye práctica de recuperación y pequeños descansos, y reserva el último día para un simulacro.',
                     vistaTitulo: 'Ejemplo de plan de repaso',
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prompts: [
                 {
                     id: 'd1',
-                    imagen: '../imagenes/prompts-estudios/plan-clase.png',
+                    imagen: '../../imagenes/prompts-estudios/plan-clase.png',
                     titulo: 'Plan de clase',
                     texto: 'Actúa como asesor pedagógico. Diseña una clase de [duración] para [grado] sobre [tema]. Incluye objetivo medible, conocimientos previos, inicio, desarrollo, cierre, recursos, tiempos y una evaluación breve. Considera [necesidades del grupo].',
                     vistaTitulo: 'Ejemplo de plan de clase',
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'd2',
-                    imagen: '../imagenes/prompts-estudios/rubrica-evaluacion.png',
+                    imagen: '../../imagenes/prompts-estudios/rubrica-evaluacion.png',
                     titulo: 'Rúbrica de evaluación',
                     texto: 'Crea una rúbrica para evaluar [actividad] en [grado]. Usa cuatro criterios observables, cuatro niveles de desempeño y descriptores concretos para cada nivel. Incluye puntaje total de 100 y explica cómo se calcula.',
                     vistaTitulo: 'Ejemplo de rúbrica',
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'd3',
-                    imagen: '../imagenes/prompts-estudios/actividades-participativas.png',
+                    imagen: '../../imagenes/prompts-estudios/actividades-participativas.png',
                     titulo: 'Actividades participativas',
                     texto: 'Propón cinco actividades participativas para enseñar [tema] a [grado] con [cantidad] estudiantes. Para cada una, indica objetivo, materiales económicos, instrucciones, duración y una alternativa para estudiantes con distintas necesidades.',
                     vistaTitulo: 'Ejemplo de actividad grupal',
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'd4',
-                    imagen: '../imagenes/prompts-estudios/evaluacion-diagnostica.png',
+                    imagen: '../../imagenes/prompts-estudios/evaluacion-diagnostica.png',
                     titulo: 'Evaluación diagnóstica',
                     texto: 'Elabora una evaluación diagnóstica de ocho preguntas sobre [tema] para [grado]. Mezcla selección y respuestas cortas. Incluye respuestas esperadas y una guía para interpretar resultados y decidir qué contenidos reforzar.',
                     vistaTitulo: 'Ejemplo de diagnóstico',
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'd5',
-                    imagen: '../imagenes/prompts-estudios/adaptacion-niveles.png',
+                    imagen: '../../imagenes/prompts-estudios/adaptacion-niveles.png',
                     titulo: 'Adaptación por niveles',
                     texto: 'Adapta una actividad sobre [tema] para tres niveles: inicial, intermedio y avanzado. Mantén el mismo objetivo general, pero cambia instrucciones, apoyos y dificultad. Sugiere una manera justa de comprobar el aprendizaje en cada nivel.',
                     vistaTitulo: 'Ejemplo de adaptación',
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 {
                     id: 'd6',
-                    imagen: '../imagenes/prompts-estudios/guion-presentacion.png',
+                    imagen: '../../imagenes/prompts-estudios/guion-presentacion.png',
                     titulo: 'Guion de presentación',
                     texto: 'Crea el guion de seis diapositivas para una clase de [tema] dirigida a [grado]. Por diapositiva indica título, tres ideas esenciales, una sugerencia visual y notas breves para el docente. Termina con una pregunta de reflexión.',
                     vistaTitulo: 'Ejemplo de presentación',

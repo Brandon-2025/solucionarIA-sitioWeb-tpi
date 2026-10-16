@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prompts: [
                 {
                     id: 'c1',
-                    imagen: '../imagenes/prompts-oficina/cv-optimizar.png',
+                    imagen: '../../imagenes/prompts-oficina/cv-optimizar.png',
                     titulo: 'Optimizar mi currículum',
                     texto: 'Actúa como especialista en selección de personal y optimizador de currículum vitae con IA. Revisa este CV: [pega tu currículum sin datos sensibles]. Quiero postularme a [puesto]. Mejora claridad, estructura y verbos de acción, destaca habilidades pertinentes y propón una versión compatible con sistemas ATS. No inventes empleos, estudios, fechas ni resultados. Señala qué datos debo confirmar.',
                     vistaTitulo: 'Ejemplo de CV mejorado',
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'c2',
-                    imagen: '../imagenes/prompts-oficina/cv-sin-experiencia.png',
+                    imagen: '../../imagenes/prompts-oficina/cv-sin-experiencia.png',
                     titulo: 'CV sin experiencia',
                     texto: 'Crea una plantilla de prompt para mejorar mi currículum vitae sin experiencia laboral formal. Estudio [carrera], he desarrollado [proyectos académicos], conozco [herramientas] y busco [tipo de empleo]. Propón secciones de perfil, formación, proyectos, habilidades y actividades relevantes; redacta ejemplos claros y marca la información que debo completar. No inventes prácticas ni empleos.',
                     vistaTitulo: 'Ejemplo de CV sin experiencia',
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'c3',
-                    imagen: '../imagenes/prompts-oficina/carta-presentacion.png',
+                    imagen: '../../imagenes/prompts-oficina/carta-presentacion.png',
                     titulo: 'Carta de presentación',
                     texto: 'Ayúdame a redactar una carta de presentación laboral con ChatGPT para la vacante [puesto] en [empresa]. Estos son mis estudios y habilidades reales: [datos]. Explica por qué me interesa el puesto, conecta dos habilidades con sus requisitos y cierra solicitando una entrevista. Usa tono profesional y máximo 250 palabras. No inventes experiencia ni logros.',
                     vistaTitulo: 'Ejemplo de carta laboral',
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'c4',
-                    imagen: '../imagenes/prompts-oficina/adaptar-cv.png',
+                    imagen: '../../imagenes/prompts-oficina/adaptar-cv.png',
                     titulo: 'Adaptar CV a una vacante',
                     texto: 'Compara mi currículum [texto del CV] con esta oferta laboral [descripción de la vacante]. Identifica requisitos que sí cumplo, habilidades transferibles y aspectos que debo fortalecer. Sugiere mejoras específicas para mi CV y palabras relevantes del anuncio que pueda incorporar de forma natural, solo cuando sean verdaderas. No inventes competencias ni certificados.',
                     vistaTitulo: 'Ejemplo de adaptación',
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'c5',
-                    imagen: '../imagenes/prompts-oficina/perfil-profesional.png',
+                    imagen: '../../imagenes/prompts-oficina/perfil-profesional.png',
                     titulo: 'Perfil profesional atractivo',
                     texto: 'Redacta tres versiones de mi perfil profesional para currículum: breve, formal y orientada a resultados. Mis datos reales son [estudios], [habilidades], [proyectos o experiencia] y mi objetivo es [puesto]. Cada versión debe tener entre 40 y 65 palabras, ser concreta y evitar adjetivos vacíos o logros no demostrables.',
                     vistaTitulo: 'Ejemplo de perfil profesional',
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'c6',
-                    imagen: '../imagenes/prompts-oficina/entrevista-laboral.png',
+                    imagen: '../../imagenes/prompts-oficina/entrevista-laboral.png',
                     titulo: 'Preparar entrevista laboral',
                     texto: 'Actúa como entrevistador para el puesto de [vacante]. Formula ocho preguntas habituales y tres situacionales. Hazlas una por una, espera mis respuestas y dame retroalimentación específica sobre claridad, ejemplos y pertinencia. Ayúdame a estructurar mis experiencias reales con el método STAR sin inventar resultados.',
                     vistaTitulo: 'Ejemplo de entrevista',
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prompts: [
                 {
                     id: 'm1',
-                    imagen: '../imagenes/prompts-oficina/aumento-salarial.png',
+                    imagen: '../../imagenes/prompts-oficina/aumento-salarial.png',
                     titulo: 'Solicitar aumento salarial',
                     texto: 'Actúa como asesor de comunicación profesional. Necesito saber cómo pedir un aumento de sueldo por correo con una plantilla de IA. Mi puesto es [puesto], llevo [tiempo] y mis aportes verificables son [ejemplos]. Redacta un correo respetuoso para solicitar una reunión sobre revisión salarial, sin exigir una cifra ni afirmar logros que no haya proporcionado. Incluye asunto y cierre.',
                     vistaTitulo: 'Ejemplo de solicitud de aumento',
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'm2',
-                    imagen: '../imagenes/prompts-oficina/correo-emergencia.png',
+                    imagen: '../../imagenes/prompts-oficina/correo-emergencia.png',
                     titulo: 'Correo por emergencia',
                     texto: 'Crea tres plantillas de correo de emergencias laborales para [situación: imprevisto familiar, problema de salud o incidente de transporte]. Necesito avisar a [destinatario] que [impacto en horario o entrega]. Redacta una versión muy breve, una formal y una con plan de continuidad. Protege mi privacidad: no incluyas detalles médicos o familiares innecesarios.',
                     vistaTitulo: 'Ejemplo de correo urgente',
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'm3',
-                    imagen: '../imagenes/prompts-oficina/permiso-laboral.png',
+                    imagen: '../../imagenes/prompts-oficina/permiso-laboral.png',
                     titulo: 'Solicitar permiso laboral',
                     texto: 'Redacta un correo para solicitar permiso laboral el día [fecha] durante [horario] por [motivo general, sin detalles privados]. Mi destinatario es [jefatura o RR. HH.]. Mantén un tono cortés, explica cómo organizaré mis pendientes y solicita confirmación. Evita dar por aprobado el permiso.',
                     vistaTitulo: 'Ejemplo de solicitud de permiso',
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'm4',
-                    imagen: '../imagenes/prompts-oficina/retraso-entrega.png',
+                    imagen: '../../imagenes/prompts-oficina/retraso-entrega.png',
                     titulo: 'Avisar retraso de entrega',
                     texto: 'Ayúdame a redactar un correo profesional para informar que la entrega de [tarea o proyecto] tendrá un retraso. La causa comprobable es [motivo], el avance actual es [estado] y la nueva fecha propuesta es [fecha]. Explica el impacto y dos acciones para reducirlo, sin culpar a otras personas ni prometer plazos imposibles.',
                     vistaTitulo: 'Ejemplo de aviso de retraso',
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'm5',
-                    imagen: '../imagenes/prompts-oficina/seguimiento-solicitud.png',
+                    imagen: '../../imagenes/prompts-oficina/seguimiento-solicitud.png',
                     titulo: 'Seguimiento de una solicitud',
                     texto: 'Escribe un correo breve de seguimiento sobre [solicitud o trámite] enviado el [fecha] a [destinatario]. Pregunta amablemente por su estado, recuerda el contexto en una oración y ofrece facilitar información adicional. Prepara dos tonos: cordial y formal. No hagas afirmaciones sobre plazos que no conozcas.',
                     vistaTitulo: 'Ejemplo de seguimiento',
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'm6',
-                    imagen: '../imagenes/prompts-oficina/resolver-malentendido.png',
+                    imagen: '../../imagenes/prompts-oficina/resolver-malentendido.png',
                     titulo: 'Resolver un malentendido',
                     texto: 'Redacta un correo diplomático para aclarar un malentendido laboral sobre [situación]. Los hechos que puedo verificar son [hechos]. Expresa mi perspectiva sin acusaciones, reconoce posibles confusiones y propone una conversación o siguiente paso concreto. Incluye asunto, saludo, cuerpo y despedida.',
                     vistaTitulo: 'Ejemplo de aclaración',
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prompts: [
                 {
                     id: 'r1',
-                    imagen: '../imagenes/prompts-oficina/notas-reunion.png',
+                    imagen: '../../imagenes/prompts-oficina/notas-reunion.png',
                     titulo: 'Ordenar notas de reunión',
                     texto: 'Actúa como asistente de productividad. Necesito saber cómo resumir notas desordenadas de una reunión en puntos clave. Estas son mis notas: [pega las notas sin datos confidenciales]. Organízalas en temas tratados, decisiones confirmadas, dudas abiertas y próximos pasos. Mantén fielmente los hechos; no inventes asistentes, acuerdos, responsables ni fechas.',
                     vistaTitulo: 'Ejemplo de notas ordenadas',
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'r2',
-                    imagen: '../imagenes/prompts-oficina/minuta-reunion.png',
+                    imagen: '../../imagenes/prompts-oficina/minuta-reunion.png',
                     titulo: 'Minuta automática',
                     texto: 'Genera una plantilla para minuta de reunión de trabajo automática usando estas notas: [contenido]. Organiza: fecha [si está disponible], objetivo, asistentes confirmados, puntos discutidos, acuerdos, responsables, fechas límite y pendientes. Usa una tabla para las tareas. Cuando falte un dato escribe "Por confirmar"; nunca lo inventes.',
                     vistaTitulo: 'Ejemplo de minuta de reunión',
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'r3',
-                    imagen: '../imagenes/prompts-oficina/tareas-responsables.png',
+                    imagen: '../../imagenes/prompts-oficina/tareas-responsables.png',
                     titulo: 'Tareas y responsables',
                     texto: 'A partir de esta conversación o acta de reunión [texto], extrae todas las tareas acordadas. Preséntalas en una tabla con tarea, responsable, fecha límite, prioridad y estado. No asignes nombres o fechas no mencionados: usa "Sin definir". Añade tres preguntas de seguimiento para cerrar vacíos de información.',
                     vistaTitulo: 'Ejemplo de plan de acciones',
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'r4',
-                    imagen: '../imagenes/prompts-oficina/correo-postreunion.png',
+                    imagen: '../../imagenes/prompts-oficina/correo-postreunion.png',
                     titulo: 'Correo después de reunión',
                     texto: 'Escribe un correo de seguimiento posterior a una reunión de [tema]. Estas fueron las decisiones y tareas confirmadas: [acuerdos]. Resume en cinco puntos lo tratado, enumera los compromisos con responsables y fechas cuando existan y solicita correcciones si alguien detecta una diferencia. No agregues acuerdos no mencionados.',
                     vistaTitulo: 'Ejemplo de correo posterior',
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'r5',
-                    imagen: '../imagenes/prompts-oficina/botiquin-digital.png',
+                    imagen: '../../imagenes/prompts-oficina/botiquin-digital.png',
                     titulo: 'Botiquín digital de oficina',
                     texto: 'Actúa como mi botiquín digital de oficina para resolver un imprevisto cotidiano. El problema es [describe la situación sin información confidencial], tengo [tiempo disponible] y cuento con [herramientas]. Dame un diagnóstico inicial no técnico, tres acciones inmediatas ordenadas por prioridad, un mensaje breve para informar al equipo y un plan alternativo si no se resuelve. Indica cuándo debo pedir ayuda humana.',
                     vistaTitulo: 'Ejemplo de botiquín digital',
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 {
                     id: 'r6',
-                    imagen: '../imagenes/prompts-oficina/auxilio-laboral.png',
+                    imagen: '../../imagenes/prompts-oficina/auxilio-laboral.png',
                     titulo: 'Auxilio laboral gratis',
                     texto: 'Actúa como orientador general de comunicación y organización laboral. Tengo esta dificultad en el trabajo: [situación]. Ayúdame a separar hechos de opiniones, documentar lo ocurrido, identificar opciones de comunicación respetuosa y preparar preguntas para recursos humanos o una fuente oficial. Si puede involucrar derechos laborales, pregunta mi país y aclara que no sustituyes asesoría legal profesional; no cites leyes que no puedas verificar.',
                     vistaTitulo: 'Ejemplo de auxilio laboral',
