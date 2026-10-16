@@ -1,16 +1,4 @@
 
-/* ==============================================
-   ESTILOS EXCLUSIVOS DE OFICINA Y PRODUCTIVIDAD
-   SOLUCIONARIA
-
-   Este archivo se carga DESPUÉS de principal.css
-   ============================================== */
-
-
-/* ==============================================
-   1. ESTILOS GENERALES
-   ============================================== */
-
 *,
 *::before,
 *::after {
@@ -23,11 +11,6 @@ body.site-body {
     color: #1e293b;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
-/* ==============================================
-   2. ENCABEZADO Y PIE DE PÁGINA DEL LÍDER
-   ============================================== */
 
 .logo img {
     max-height: 45px;
@@ -51,11 +34,6 @@ body.site-body {
     white-space: nowrap;
     border: 0;
 }
-
-
-/* ==============================================
-   3. BANNER SUPERIOR DE OFICINA
-   ============================================== */
 
 .oficina-hero {
     display: flex;
@@ -99,11 +77,6 @@ body.site-body {
     object-fit: contain;
 }
 
-
-/* ==============================================
-   4. DISTRIBUCIÓN DE LAS TRES COLUMNAS
-   ============================================== */
-
 .oficina-layout {
     display: grid;
     grid-template-columns: 235px minmax(0,1fr) 275px;
@@ -118,11 +91,6 @@ body.site-body {
     min-width: 0;
     border-radius: 12px;
 }
-
-
-/* ==============================================
-   5. PANEL IZQUIERDO - BREVE TUTORIAL
-   ============================================== */
 
 .oficina-tutorial {
     padding: 24px 17px;
@@ -170,22 +138,12 @@ body.site-body {
     font-weight: 700;
 }
 
-
-/* ==============================================
-   6. PANEL CENTRAL DE PROMPTS
-   ============================================== */
-
 .oficina-panel {
     background: #ffffff;
     border: 1px solid #cbd5e1;
     padding: 18px;
     box-shadow: 0 2px 8px rgba(0,0,0,.04);
 }
-
-
-/* ==============================================
-   7. PESTAÑAS DE LOS TRES MÓDULOS
-   ============================================== */
 
 .oficina-tabs {
     display: grid;
@@ -233,11 +191,6 @@ body.site-body {
     color: #475569;
 }
 
-
-/* ==============================================
-   8. CUADRÍCULA DE TARJETAS DE PROMPTS
-   ============================================== */
-
 .prompts-grid {
     display: grid;
     grid-template-columns: repeat(3,minmax(0,1fr));
@@ -266,11 +219,6 @@ body.site-body {
     padding: 12px 11px 11px;
     background: #e0f2fe;
 }
-
-
-/* ==============================================
-   9. CONTENIDO DE CADA TARJETA
-   ============================================== */
 
 .prompt-seleccionar {
     display: block;
@@ -325,11 +273,6 @@ body.site-body {
     line-height: 1.5;
 }
 
-
-/* ==============================================
-   10. BOTONES PARA COPIAR PROMPTS
-   ============================================== */
-
 .prompt-acciones {
     display: flex;
     justify-content: flex-end;
@@ -359,22 +302,12 @@ body.site-body {
     border-color: #86efac;
 }
 
-
-/* ==============================================
-   11. ACCESIBILIDAD DE LOS BOTONES
-   ============================================== */
-
 .oficina-tab:focus-visible,
 .prompt-seleccionar:focus-visible,
 .btn-copiar:focus-visible {
     outline: 3px solid #2563eb;
     outline-offset: 3px;
 }
-
-
-/* ==============================================
-   12. PANEL DERECHO - VISTA PREVIA
-   ============================================== */
 
 .oficina-vista-previa {
     padding: 20px 14px;
@@ -414,11 +347,6 @@ body.site-body {
     line-height: 1.45;
 }
 
-
-/* ==============================================
-   13. CONTENIDO DE LA VISTA PREVIA
-   ============================================== */
-
 .vista-resultado {
     padding: 15px;
     background: #ffffff;
@@ -451,11 +379,6 @@ body.site-body {
     line-height: 1.4;
     margin: 12px 0 0;
 }
-
-
-/* ==============================================
-   14. ILUSTRACIÓN INTEGRADA DEL BANNER
-   ============================================== */
 
 .oficina-hero-visual {
     display: flex;
@@ -502,25 +425,12 @@ body.site-body {
     font-weight: 700;
 }
 
-
-/* ==============================================
-   15. MENSAJE DE PRIVACIDAD DEL TUTORIAL
-   ============================================== */
-
 .tutorial-privacidad {
     margin: 17px 0 0;
     color: #334155;
     font-size: .77rem;
     line-height: 1.55;
 }
-
-
-/* ==============================================
-   16. DISEÑO RESPONSIVE
-   ============================================== */
-
-
-/* Pantallas menores a 1250px */
 
 @media (max-width: 1250px) {
 
@@ -540,9 +450,6 @@ body.site-body {
     }
 
 }
-
-
-/* Pantallas menores a 920px */
 
 @media (max-width: 920px) {
 
@@ -570,9 +477,6 @@ body.site-body {
     }
 
 }
-
-
-/* Pantallas menores a 680px - Celulares */
 
 @media (max-width: 680px) {
 
@@ -643,13 +547,109 @@ body.site-body {
 
 }
 
-
-/* Pantallas entre 450px y 680px */
-
 @media (min-width: 450px) and (max-width: 680px) {
 
     .prompts-grid {
         grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+}
+
+.search-bar-oficina {
+    position: relative;
+    display: block;
+    width: 230px;
+    flex: 0 0 230px;
+}
+
+.search-bar-oficina input {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 10px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 24px;
+    background: #ffffff;
+    color: #1e293b;
+    font-family: inherit;
+    font-size: .95rem;
+}
+
+.search-bar-oficina input:focus-visible {
+    outline: 2px solid #94a3b8;
+    outline-offset: 2px;
+}
+
+.search-bar-oficina .resultados-busqueda {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 340px;
+    max-width: calc(100vw - 30px);
+    max-height: 350px;
+    overflow-y: auto;
+    padding: 7px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, .15);
+    z-index: 1100;
+}
+
+.search-bar-oficina .resultados-busqueda[hidden] {
+    display: none !important;
+}
+
+.busqueda-contador {
+    margin: 4px 10px 7px;
+    color: #64748b;
+    font-size: .8rem;
+}
+
+.resultado-prompt {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 0;
+    background: #ffffff;
+    color: #1e293b;
+    font-family: inherit;
+    font-size: .9rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.resultado-prompt:hover,
+.resultado-prompt:focus-visible {
+    background: #f8fafc;
+}
+
+.resultado-prompt small {
+    color: #64748b;
+    font-size: .78rem;
+}
+
+.busqueda-vacia {
+    margin: 0;
+    padding: 12px;
+    color: #475569;
+    font-size: .9rem;
+}
+
+@media (max-width: 680px) {
+
+    .search-bar-oficina {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .search-bar-oficina .resultados-busqueda {
+        width: 100%;
+        max-width: 100%;
     }
 
 }
