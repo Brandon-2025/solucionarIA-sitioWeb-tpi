@@ -1,16 +1,4 @@
 
-/* ==============================================
-   ESTILOS EXCLUSIVOS DE OFICINA Y PRODUCTIVIDAD
-   SOLUCIONARIA
-
-   Este archivo se carga DESPUÉS de principal.css
-   ============================================== */
-
-
-/* ==============================================
-   1. ESTILOS GENERALES
-   ============================================== */
-
 *,
 *::before,
 *::after {
@@ -25,9 +13,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   2. ENCABEZADO Y PIE DE PÁGINA DEL LÍDER
-   ============================================== */
 
 .logo img {
     max-height: 45px;
@@ -53,9 +38,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   3. BANNER SUPERIOR DE OFICINA
-   ============================================== */
 
 .oficina-hero {
     display: flex;
@@ -100,9 +82,7 @@ body.site-body {
 }
 
 
-/* ==============================================
-   4. DISTRIBUCIÓN DE LAS TRES COLUMNAS
-   ============================================== */
+
 
 .oficina-layout {
     display: grid;
@@ -120,9 +100,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   5. PANEL IZQUIERDO - BREVE TUTORIAL
-   ============================================== */
 
 .oficina-tutorial {
     padding: 24px 17px;
@@ -171,9 +148,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   6. PANEL CENTRAL DE PROMPTS
-   ============================================== */
 
 .oficina-panel {
     background: #ffffff;
@@ -183,9 +157,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   7. PESTAÑAS DE LOS TRES MÓDULOS
-   ============================================== */
 
 .oficina-tabs {
     display: grid;
@@ -234,9 +205,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   8. CUADRÍCULA DE TARJETAS DE PROMPTS
-   ============================================== */
 
 .prompts-grid {
     display: grid;
@@ -268,9 +236,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   9. CONTENIDO DE CADA TARJETA
-   ============================================== */
 
 .prompt-seleccionar {
     display: block;
@@ -326,10 +291,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   10. BOTONES PARA COPIAR PROMPTS
-   ============================================== */
-
 .prompt-acciones {
     display: flex;
     justify-content: flex-end;
@@ -360,9 +321,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   11. ACCESIBILIDAD DE LOS BOTONES
-   ============================================== */
 
 .oficina-tab:focus-visible,
 .prompt-seleccionar:focus-visible,
@@ -372,9 +330,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   12. PANEL DERECHO - VISTA PREVIA
-   ============================================== */
 
 .oficina-vista-previa {
     padding: 20px 14px;
@@ -415,9 +370,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   13. CONTENIDO DE LA VISTA PREVIA
-   ============================================== */
 
 .vista-resultado {
     padding: 15px;
@@ -453,9 +405,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   14. ILUSTRACIÓN INTEGRADA DEL BANNER
-   ============================================== */
 
 .oficina-hero-visual {
     display: flex;
@@ -503,9 +452,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   15. MENSAJE DE PRIVACIDAD DEL TUTORIAL
-   ============================================== */
 
 .tutorial-privacidad {
     margin: 17px 0 0;
@@ -515,12 +461,6 @@ body.site-body {
 }
 
 
-/* ==============================================
-   16. DISEÑO RESPONSIVE
-   ============================================== */
-
-
-/* Pantallas menores a 1250px */
 
 @media (max-width: 1250px) {
 
@@ -542,7 +482,7 @@ body.site-body {
 }
 
 
-/* Pantallas menores a 920px */
+
 
 @media (max-width: 920px) {
 
@@ -572,7 +512,7 @@ body.site-body {
 }
 
 
-/* Pantallas menores a 680px - Celulares */
+
 
 @media (max-width: 680px) {
 
@@ -644,7 +584,7 @@ body.site-body {
 }
 
 
-/* Pantallas entre 450px y 680px */
+
 
 @media (min-width: 450px) and (max-width: 680px) {
 

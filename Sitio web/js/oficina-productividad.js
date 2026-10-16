@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 3 módulos y 18 prompts editables. Los [corchetes] indican datos que el usuario personaliza.
-    // Las vistas previas son ejemplos fijos: no se conecta a una API de inteligencia artificial.
+    
     const catalogo = {
     "curriculum": {
         "titulo": "Currículum y Empleo con IA",
@@ -207,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         seleccion[moduloActual] = id;
         tituloVista.textContent = prompt.vistaTitulo;
         iconoVista.textContent = prompt.vistaIcono;
-        // HTML estático creado y revisado en este mismo archivo, no texto introducido por visitantes.
+        
         resultadoVista.innerHTML = prompt.ejemplo;
 
         lista.querySelectorAll('.prompt-card').forEach(tarjeta => {
@@ -280,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
             await navigator.clipboard.writeText(texto);
             return;
         }
-        // Alternativa para navegadores que no ofrecen Clipboard API (por ejemplo file://).
+        
         const area = document.createElement('textarea');
         area.value = texto;
         area.style.position = 'fixed';
