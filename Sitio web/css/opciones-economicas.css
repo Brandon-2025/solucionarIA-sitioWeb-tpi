@@ -297,3 +297,41 @@ body {
     justify-content: space-between;
     font-weight: 600;
 }
+
+/* Migas de pan (breadcrumb) - Estándar del equipo */
+.breadcrumb {
+    margin: 20px 40px 0 40px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb li + li::before {
+    content: "›";
+    margin-right: 8px;
+    color: #94a3b8;
+}
+
+.breadcrumb a {
+    color: #102CAA;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste responsivo para celulares */
+@media (max-width: 900px) {
+    .breadcrumb {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
