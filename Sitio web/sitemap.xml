@@ -4,7 +4,7 @@
 
     <!-- Página principal -->
     <url>
-        <loc>https://solucionaria.github.io/principal.html</loc>
+        <loc>https://solucionaria.github.io/index.html</loc>
         <lastmod>2026-10-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -36,7 +36,7 @@
 
     <!-- Hogar y Finanzas: Atajos de la Vida Real -->
     <url>
-        <loc>https://solucionaria.github.io/secciones/hogar-finanzas/</loc>
+        <loc>https://solucionaria.github.io/secciones/hogar-finanzas/hogar-finanzas.html</loc>
         <lastmod>2026-10-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

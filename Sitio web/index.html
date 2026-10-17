@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPI115 - 2026 - SolucionarIA - Inteligencia Artificial a un Clic</title>
+    <!-- Enlace al Favicon -->
+    <link rel="icon" type="image/png" href="imagenes/Logo_solo.jpg">
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Metadatos Estándar -->
+    <title>SolucionarIA - Inteligencia Artificial a un Clic | Soluciones con IA</title>
+    <meta name="description"
+        content="Encuentra herramientas de Inteligencia Artificial gratuitas, probadas y seguras para automatizar tareas cotidianas en estudios, productividad y el hogar.">
+    <meta name="keywords"
+        content="SolucionarIA, inteligencia artificial, ia, soluciones, Soluciones con IA, Herramientas de IA para automatizar tareas cotidianas, ia gratis">
+    <meta name="author" content="TPI Desarrolladores">
+    <meta name="robots"
+        content="index, follow">
+
+    <!-- Open Graph Protocol (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SolucionarIA - Inteligencia Artificial a un Clic">
+    <meta property="og:description"
+        content="Herramientas de IA gratuitas, probadas y seguras para resolver tus tareas académicas, profesionales y cotidianas.">
+    <meta property="og:url" content="https://solucionaria.github.io/index.html">
+    <meta property="og:image" content="https://solucionaria.github.io/imagenes/Logo_con_eslogan.png">
+    <meta property="og:site_name" content="SolucionarIA">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SolucionarIA - Inteligencia Artificial a un Clic">
+    <meta name="twitter:description"
+        content="Herramientas de IA para automatizar tareas cotidianas, estudios y productividad sin costo.">
+    <meta name="twitter:image" content="https://solucionaria.github.io/imagenes/Logo_con_eslogan.png">
+
+    <!-- Fragmento Enriquecido JSON-LD Completo (Schema.org) con Redes Sociales -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://solucionaria.github.io/#organization",
+          "name": "SolucionarIA",
+          "url": "https://solucionaria.github.io/",
+          "logo": "https://solucionaria.github.io/imagenes/Logo_con_eslogan.png",
+          "description": "Plataforma colaborativa de soluciones con inteligencia artificial para automatizar tareas cotidianas, académicas y profesionales.",
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61595142584544",
+            "https://www.instagram.com/solucionaria_?vrfl=MW1vMTJ2eXh5Ymltdw==",
+            "https://x.com/_solucionaria",
+            "https://pin.it/1yjfVhmlz"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://solucionaria.github.io/#website",
+          "url": "https://solucionaria.github.io/",
+          "name": "SolucionarIA",
+          "publisher": {
+            "@id": "https://solucionaria.github.io/#organization"
+          },
+          "description": "Plataforma de Soluciones con IA y herramientas para automatizar tareas cotidianas.",
+          "inLanguage": "es-ES",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://solucionaria.github.io/index.html?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://solucionaria.github.io/index.html",
+          "url": "https://solucionaria.github.io/index.html",
+          "name": "TPI115 - 2026 - SolucionarIA - Inteligencia Artificial a un Clic",
+          "isPartOf": {
+            "@id": "https://solucionaria.github.io/#website"
+          },
+          "about": {
+            "@id": "https://solucionaria.github.io/#organization"
+          },
+          "description": "Herramientas de IA gratuitas, probadas y seguras para resolver tus tareas académicas, profesionales y cotidianas.",
+          "keywords": [
+            "SolucionarIA",
+            "inteligencia artificial",
+            "ia",
+            "soluciones",
+            "Soluciones con IA",
+            "Herramientas de IA para automatizar tareas cotidianas"
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="imagenes/logo-encabezado.png" width="200" height="200" alt="Logo Solucionaria"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#resolver">¿Qué necesitas resolver?</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#redes-sociales">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <!-- Se agregan IDs para capturar los eventos en JavaScript -->
+            <input type="text" id="input-busqueda" placeholder="Buscar herramienta o tarea...">
+            <button type="button" id="btn-busqueda">🔍 Buscar</button>
+        </div>
+    </header>
+
+    <!-- Rastro de Migajas / Breadcrumbs 
+    <nav class="breadcrumb-container" aria-label="Rastro de migajas">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+        </ol>
+    </nav>
+    -->
+
+    <!-- Sección Hero (Presentación) -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>SolucionarIA: Inteligencia Artificial a un Clic</h1>
+            <p>Herramientas de IA gratuitas, probadas y seguras para resolver tus tareas académicas, profesionales y
+                cotidianas.</p>
+        </div>
+        <div class="hero-image">
+            <img src="imagenes/imagen-ia.png" alt="Ilustración persona usando IA">
+        </div>
+    </section>
+
+    <!-- Segmento 1: ¿Qué necesitas resolver hoy? -->
+    <section id="resolver" class="section-resolver">
+        <h2>¿Qué necesitas resolver hoy?</h2>
+        <p class="subtitle">Elige una categoría para encontrar el atajo adecuado.</p>
+
+        <div class="cards-grid">
+            <a href="secciones/estudiantes-docentes/estudiantes-docentes.html" class="card">
+                <img src="imagenes/estudios.png" alt="Estudios">
+                <h3>Estudios</h3>
+            </a>
+            <a href="secciones/oficina-productividad/oficina-productividad.html" class="card">
+                <img src="imagenes/productividad.png" alt="Productividad">
+                <h3>Productividad</h3>
+            </a>
+            <a href="secciones/hogar-finanzas/hogar-finanzas.html" class="card">
+                <img src="imagenes/hogar.png" alt="Hogar">
+                <h3>Hogar</h3>
+            </a>
+            <a href="secciones/opciones-economicas/opciones-economicas.html" class="card">
+                <img src="imagenes/herramientas.png" alt="Otras alternativas">
+                <h3>Opciones más económicas</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Segmento 2: Herramientas de IA -->
+    <section id="herramientas" class="section-herramientas">
+        <h2>Herramientas de Inteligencia Artificial</h2>
+        <p class="subtitle">Catálogo de soluciones probadas, seguras y gratuitas para cada caso de uso.</p>
+
+        <!-- Tabla transparente sin bordes internos -->
+        <div class="table-container">
+            <table class="ia-table">
+                <thead>
+                    <tr>
+                        <th>Logo de IA</th>
+                        <th>Nombre y breve descripción</th>
+                        <th>Enlace al sitio oficial</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-cuerpo">
+                    <!-- 1. Estudios, Investigación y Cuestionarios -->
+                    <tr>
+                        <td><img src="imagenes/notebooklm-logo.png" alt="NotebookLM" class="table-logo"></td>
+                        <td><strong>NotebookLM (Google):</strong> Sube PDFs, libros o apuntes para generar guías de
+                            estudio, resúmenes automáticos y síntesis en audio sin inventar datos.</td>
+                        <td><a href="https://notebooklm.google.com" target="_blank" rel="noopener">Visitar sitio</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/perplexity-logo.png" alt="Perplexity AI" class="table-logo"></td>
+                        <td><strong>Perplexity AI:</strong> Respuestas inmediatas con fuentes web citadas en tiempo real
+                            para investigaciones y trabajos.</td>
+                        <td><a href="https://www.perplexity.ai" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/claude-logo.png" alt="Claude" class="table-logo"></td>
+                        <td><strong>Claude (Anthropic):</strong> Análisis de lecturas densas, redacción de ensayos y
+                            explicación paso a paso de conceptos teóricos complejos.</td>
+                        <td><a href="https://claude.ai" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/elicit-logo.png" alt="Elicit / Consensus" class="table-logo"></td>
+                        <td><strong>Elicit / Consensus:</strong> Encuentra artículos científicos y evidencia académica
+                            respondiendo preguntas directas en lenguaje sencillo.</td>
+                        <td><a href="https://elicit.com" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+
+                    <!-- 2. Creación de Diapositivas y Documentos -->
+                    <tr>
+                        <td><img src="imagenes/gamma-logo.png" alt="Gamma App" class="table-logo"></td>
+                        <td><strong>Gamma App:</strong> Genera presentaciones completas, documentos estructurados y
+                            páginas con diseño profesional a partir de un borrador de texto.</td>
+                        <td><a href="https://gamma.app" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/canva-logo.png" alt="Canva Magic Design" class="table-logo"></td>
+                        <td><strong>Canva Magic Design / Tome AI:</strong> Maquetación visual rápida con plantillas
+                            adaptables para exposiciones escolares o universitarias.</td>
+                        <td><a href="https://www.canva.com" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/languagetool-logo.png" alt="LanguageTool" class="table-logo"></td>
+                        <td><strong>LanguageTool / QuillBot:</strong> Corrección ortográfica, gramatical y reescritura
+                            de párrafos para mejorar el tono de tus documentos.</td>
+                        <td><a href="https://languagetool.org" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+
+                    <!-- 3. Organización Personal, Hábitos y Salud -->
+                    <tr>
+                        <td><img src="imagenes/caloriemama-logo.png" alt="Calorie Mama" class="table-logo"></td>
+                        <td><strong>Calorie Mama AI / Passio AI:</strong> Reconocimiento de platillos mediante fotos con
+                            el celular para estimar calorías y macronutrientes.</td>
+                        <td><a href="https://www.caloriemama.ai" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/goblin-logo.png" alt="Goblin.tools" class="table-logo"></td>
+                        <td><strong>Goblin.tools:</strong> Desglosa tareas abrumadoras en pasos sencillos (Magic Todo) y
+                            ajusta el tono de tus mensajes.</td>
+                        <td><a href="https://goblin.tools" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/todoist-logo.png" alt="Todoist IA" class="table-logo"></td>
+                        <td><strong>Todoist / Notion AI:</strong> Crea calendarios de estudio, organiza horarios y
+                            estructura rutinas diarias fácilmente.</td>
+                        <td><a href="https://todoist.com" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+
+                    <!-- 4. Finanzas Personales e Inversiones Básicas -->
+                    <tr>
+                        <td><img src="imagenes/ynab-logo.png" alt="YNAB AI" class="table-logo"></td>
+                        <td><strong>YNAB (You Need A Budget):</strong> Gestión presupuestaria basada en la web,
+                            categorización inteligente de gastos y proyección de ahorros personales.</td>
+                        <td><a href="https://www.ynab.com" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/chatgpt-logo.png" alt="ChatGPT" class="table-logo"></td>
+                        <td><strong>ChatGPT:</strong> Generación de textos, lluvia de ideas, resolución de dudas
+                            complejas, asistencia en programación y automatización de tareas generales.</td>
+                        <td><a href="https://chatgpt.com" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+
+                    <!-- 5. Programación y Resolución de Código -->
+                    <tr>
+                        <td><img src="imagenes/deepseek-logo.png" alt="DeepSeek Coder" class="table-logo"></td>
+                        <td><strong>DeepSeek (Coder):</strong> Explicación de algoritmos, depuración de errores
+                            (debugging) y escritura de código paso a paso.</td>
+                        <td><a href="https://www.deepseek.com/en/" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/gemini-logo.png" alt="Google Gemini" class="table-logo"></td>
+                        <td><strong>Google Gemini:</strong> Asistente de IA multimodal para redacción de textos,
+                            análisis de documentos, lluvia de ideas y resolución de consultas generales desde el
+                            navegador.</td>
+                        <td><a href="https://gemini.google.com" target="_blank" rel="noopener">Visitar sitio</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="btn-container">
+            <a href="secciones/opciones-economicas/opciones-economicas.html" class="btn-explorar">Explorar herramientas
+                accesibles</a>
+        </div>
+    </section>
+
+    <!-- Redes Sociales / Canales Oficiales -->
+    <section id="redes-sociales" class="section-redes">
+        <h3>Redes sociales oficiales:</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61595142584544" target="_blank" rel="noopener"
+                title="Facebook de SolucionarIA">
+                <img src="imagenes/redes/icono-facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/solucionaria_?vrfl=MW1vMTJ2eXh5Ymltdw==" target="_blank" rel="noopener"
+                title="Instagram de SolucionarIA">
+                <img src="imagenes/redes/icono-instagram.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/_solucionaria" target="_blank" rel="noopener" title="Twitter / X de SolucionarIA">
+                <img src="imagenes/redes/icono-twitter.png" alt="Twitter/X">
+            </a>
+            <a href="https://pin.it/1yjfVhmlz" target="_blank" rel="noopener" title="Pinterest de SolucionarIA">
+                <img src="imagenes/redes/icono-pinterest.png" alt="Pinterest">
+            </a>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>2026. solucionarIA</p>
+        <p>Hecho por: TPI desarrolladores - G06</p>
+    </footer>
+
+    <!-- Enlace al script de funcionalidad del buscadorPrincipal -->
+    <script src="js/buscadorPrincipal.js"></script>
+</body>
+
+</html>
