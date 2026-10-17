@@ -1,3 +1,4 @@
+
 # robots.txt - SolucionarIA (TPI115 - 2026)
 # Indicaciones para los motores de busqueda (Google, Bing, etc.)
 
@@ -8,7 +9,7 @@ User-agent: *
 Allow: /
 
 # Bocetos de diseno del equipo: no son contenido para el publico.
-Disallow: /wireframes/
+Disallow: /solucionarIA-sitioWeb-tpi/wireframes/
 
 # Ubicacion del mapa del sitio
-Sitemap: https://solucionaria.github.io/sitemap.xml
+Sitemap: https://brandon-2025.github.io/solucionarIA-sitioWeb-tpi/sitemap.xml
