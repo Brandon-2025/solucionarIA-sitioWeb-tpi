@@ -122,7 +122,7 @@ Haz lo siguiente:
         } else {
             inputBusqueda.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter') {
-                    window.location.href = 'index.html?q=' + encodeURIComponent(inputBusqueda.value);
+                    window.location.href = 'hogar-finanzas.html?q=' + encodeURIComponent(inputBusqueda.value);
                 }
             });
         }
