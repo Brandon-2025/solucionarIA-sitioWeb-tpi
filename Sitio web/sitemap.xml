@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mapa del sitio de SolucionarIA (TPI115 - 2026). Actualizar <lastmod> al publicar cambios. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Página principal -->
+    <url>
+        <loc>https://solucionaria.github.io/principal.html</loc>
+        <lastmod>2026-10-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Estudios: Generador de Tareas y Clases -->
+    <url>
+        <loc>https://solucionaria.github.io/secciones/estudiantes-docentes/estudiantes-docentes.html</loc>
+        <lastmod>2026-10-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Oficina y Productividad: Botiquín Digital de Trabajo -->
+    <url>
+        <loc>https://solucionaria.github.io/secciones/oficina-productividad/oficina-productividad.html</loc>
+        <lastmod>2026-10-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Opciones más económicas: Filtro Anti-Trampas -->
+    <url>
+        <loc>https://solucionaria.github.io/secciones/opciones-economicas/opciones-economicas.html</loc>
+        <lastmod>2026-10-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Hogar y Finanzas: Atajos de la Vida Real -->
+    <url>
+        <loc>https://solucionaria.github.io/secciones/hogar-finanzas/</loc>
+        <lastmod>2026-10-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://solucionaria.github.io/secciones/hogar-finanzas/recetas-con-lo-que-tengo.html</loc>
+        <lastmod>2026-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://solucionaria.github.io/secciones/hogar-finanzas/lista-de-compras.html</loc>
+        <lastmod>2026-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://solucionaria.github.io/secciones/hogar-finanzas/presupuesto-quincenal.html</loc>
+        <lastmod>2026-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+</urlset>

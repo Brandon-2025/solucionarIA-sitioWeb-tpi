@@ -1,0 +1,14 @@
+# robots.txt - SolucionarIA (TPI115 - 2026)
+# Indicaciones para los motores de busqueda (Google, Bing, etc.)
+
+# Todos los rastreadores pueden recorrer el sitio completo.
+# Las carpetas css/, js/ e imagenes/ quedan permitidas porque Google
+# las necesita para ver la pagina tal como la ve el usuario.
+User-agent: *
+Allow: /
+
+# Bocetos de diseno del equipo: no son contenido para el publico.
+Disallow: /wireframes/
+
+# Ubicacion del mapa del sitio
+Sitemap: https://solucionaria.github.io/sitemap.xml
