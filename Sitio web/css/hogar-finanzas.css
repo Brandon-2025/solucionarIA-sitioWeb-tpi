@@ -62,9 +62,15 @@ body {
     transition: color 0.3s;
 }
 
-.nav a:hover,
-.nav a.activo {
+.nav a:hover {
     color: #00b4d8;
+}
+
+/* Página actual: azul de la marca (contraste 10.7:1) y subrayado celeste */
+.nav a.activo {
+    color: var(--azul);
+    border-bottom: 3px solid var(--celeste);
+    padding-bottom: 2px;
 }
 
 .search-bar input {
@@ -375,9 +381,10 @@ body {
     font-size: 0.9rem;
 }
 
-.btn-facebook { background-color: #1877f2; }
+/* Tonos oscurecidos para contraste mínimo 4.5:1 con texto blanco (WCAG AA) */
+.btn-facebook { background-color: #1464d0; }
 .btn-x { background-color: #0f172a; }
-.btn-whatsapp { background-color: #16a34a; }
+.btn-whatsapp { background-color: #15803d; }
 
 /* Referencias y uso de IA */
 .referencias {
