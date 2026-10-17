@@ -10,5 +10,5 @@ Allow: /
 # Bocetos de diseno del equipo: no son contenido para el publico.
 Disallow: /wireframes/
 
-# Ubicación del mapa del sitio
+# Ubicacion del mapa del sitio
 Sitemap: https://solucionaria.github.io/sitemap.xml
