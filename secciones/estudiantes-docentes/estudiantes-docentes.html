@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -223,7 +222,10 @@
             </a>
         </div>
 
-        <nav class="nav"
+        <!-- Botón menú hamburguesa en móviles -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
+
+        <nav class="nav" id="nav-menu"
             aria-label="Navegación principal">
 
             <ul>
@@ -237,7 +239,7 @@
 
                 <li>
                     <a href="../../secciones/estudiantes-docentes/estudiantes-docentes.html"
-                    aria-current="page">Estudios</a>
+                    aria-current="page" class="activo">Estudios</a>
                 </li>
 
                 <li>
@@ -493,6 +495,17 @@
         <p>Hecho por: TPI desarrolladores - G06</p>
 
     </footer>
+
+    <!-- Script de despliegue para menú hamburguesa -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
 
 </body>
 </html>

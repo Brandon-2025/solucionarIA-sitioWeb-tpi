@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -13,8 +12,10 @@ body.site-body {
 }
 
 .logo img {
-    max-height: 45px;
+    max-height: 65px;
+    height: 65px;
     width: auto;
+    object-fit: contain;
 }
 
 .social-icons img {
@@ -33,6 +34,54 @@ body.site-body {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+/* Header & Navegación */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    min-height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #1a365d;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #00b4d8;
+}
+
+.nav a.activo {
+    color: #102CAA;
+    border-bottom: 3px solid #40D0E0;
+    padding-bottom: 2px;
 }
 
 .estudios-hero {
@@ -380,123 +429,28 @@ body.site-body {
     margin: 12px 0 0;
 }
 
-@media (max-width: 1250px) {
-
-    .estudios-layout {
-        grid-template-columns: 205px minmax(0, 1fr) 235px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .estudios-hero {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .prompts-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
+.section-redes, .footer {
+    padding: 20px 40px;
+    margin: 20px 40px;
+    background-color: #bbf7d0;
+    border-radius: 12px;
 }
 
-@media (max-width: 920px) {
-
-    .estudios-layout {
-        grid-template-columns: minmax(0, 1fr) 260px;
-    }
-
-    .estudios-tutorial {
-        grid-column: 1 / -1;
-    }
-
-    .estudios-tutorial .tutorial-paso {
-        display: inline-flex;
-        vertical-align: top;
-        width: 30%;
-        margin-right: 2%;
-    }
-
-    .estudios-tutorial .tutorial-final {
-        margin: 0;
-    }
-
-    .estudios-hero-imagen {
-        flex-basis: 190px;
-    }
-
+.section-redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-@media (max-width: 680px) {
-
-    .header {
-        flex-direction: column;
-        gap: 12px;
-        padding: 14px;
-    }
-
-    .nav ul {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    .search-bar {
-        justify-content: center;
-    }
-
-    .estudios-hero {
-        flex-direction: column;
-        margin: 14px;
-        padding: 22px;
-        text-align: center;
-    }
-
-    .estudios-hero-imagen {
-        flex-basis: auto;
-        width: 190px;
-    }
-
-    .estudios-layout {
-        grid-template-columns: 1fr;
-        margin: 0 14px 20px;
-    }
-
-    .estudios-tutorial .tutorial-paso {
-        display: flex;
-        width: auto;
-        margin-right: 0;
-    }
-
-    .estudios-tabs {
-        grid-template-columns: 1fr;
-    }
-
-    .prompts-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section-redes,
-    .footer {
-        margin: 14px;
-    }
-
-    .section-redes {
-        flex-wrap: wrap;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
+.social-icons {
+    display: flex;
+    gap: 15px;
 }
 
-@media (min-width: 450px) and (max-width: 680px) {
-
-    .prompts-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
 }
 
 .search-bar-estudios {
@@ -580,10 +534,56 @@ body.site-body {
     font-size: 0.9rem;
 }
 
-@media (max-width: 680px) {
+/* Reglas Responsivas (Media Queries Integradas) */
+@media (max-width: 1250px) {
+    .estudios-layout {
+        grid-template-columns: 205px minmax(0, 1fr) 235px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .estudios-hero {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .prompts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 920px) {
+    .header {
+        flex-wrap: wrap;
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+        order: 3;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        padding: 10px 0;
+    }
 
     .search-bar-estudios {
         width: 100%;
+        order: 4;
+        margin-top: 10px;
     }
 
     .resultados-busqueda {
@@ -591,4 +591,59 @@ body.site-body {
         max-width: 100%;
     }
 
+    .estudios-layout {
+        grid-template-columns: 1fr;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .estudios-hero {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .estudios-hero-imagen {
+        flex-basis: auto;
+        width: 190px;
+    }
+
+    .estudios-tutorial .tutorial-paso {
+        display: flex;
+        width: auto;
+        margin-right: 0;
+    }
+
+    .estudios-tabs {
+        grid-template-columns: 1fr;
+    }
+
+    .section-redes,
+    .footer {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 680px) {
+    .prompts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-redes {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 680px) {
+    .prompts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -204,14 +203,17 @@
             </a>
         </div>
 
-        <nav class="nav" aria-label="Navegación principal">
+        <!-- Botón menú hamburguesa en móviles -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">☰</button>
+
+        <nav class="nav" id="nav-menu" aria-label="Navegación principal">
             <ul>
                 <li><a href="../../index.html">Inicio</a></li>
                 <li><a href="../../secciones/hogar-finanzas/hogar-finanzas.html">Hogar</a></li>
                 <li><a href="../../secciones/estudiantes-docentes/estudiantes-docentes.html">Estudios</a></li>
                 <li>
                     <a href="../../secciones/oficina-productividad/oficina-productividad.html"
-                       aria-current="page">Oficina</a>
+                       aria-current="page" class="activo">Oficina</a>
                 </li>
                 <li>
                     <a href="../../secciones/opciones-economicas/opciones-economicas.html">Herramientas</a>
@@ -428,5 +430,16 @@
         <p>2026. solucionarIA</p>
         <p>Hecho por: TPI desarrolladores - G06</p>
     </footer>
+
+    <!-- Script de despliegue para menú hamburguesa -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>
