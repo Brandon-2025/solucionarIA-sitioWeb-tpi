@@ -16,14 +16,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;          /* Unifica espacio superior/inferior */
-    height: 80px;                 /* Altura idéntica a principal.css */
+    padding: 10px 40px;
+    min-height: 80px;
     background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-sizing: border-box;       /* Mantiene dimensiones exactas */
+    box-sizing: border-box;
 }
 
 .logo a {
@@ -32,10 +32,19 @@ body {
 }
 
 .logo img {
-    height: 65px;                 /* Aumenta el logo de 45px a 65px para mayor visibilidad */
+    height: 65px;
     max-height: 65px;
     width: auto;
     object-fit: contain;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #1a365d;
 }
 
 .nav ul {
@@ -52,18 +61,46 @@ body {
     font-weight: 600;
 }
 
+.nav a.activo {
+    color: #102CAA;
+    border-bottom: 3px solid #40D0E0;
+    padding-bottom: 2px;
+}
+
 .search-bar input {
     padding: 8px 12px;
     border: 1px solid #cbd5e1;
     border-radius: 20px;
 }
 
-.search-bar button {
-    padding: 8px 15px;
-    background-color: #e2e8f0;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+/* Migas de pan (breadcrumb) */
+.breadcrumb {
+    margin: 20px 40px 0 40px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb li + li::before {
+    content: "›";
+    margin-right: 8px;
+    color: #94a3b8;
+}
+
+.breadcrumb a {
+    color: #102CAA;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
 }
 
 /* Banner Hero */
@@ -105,11 +142,12 @@ body {
 /* Panel de Filtros (Izquierda) */
 .sidebar-filtros {
     width: 280px;
-    background-color: #fffbe3; /* Fondo amarillento según wireframe */
+    background-color: #fffbe3;
     border: 1px solid #fde68a;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    box-sizing: border-box;
 }
 
 .filtro-grupo select {
@@ -135,6 +173,11 @@ body {
     cursor: pointer;
 }
 
+.subtitulo-filtro {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
 .acciones-filtros {
     display: flex;
     flex-direction: column;
@@ -144,7 +187,7 @@ body {
 
 .btn-aplicar {
     padding: 10px;
-    background-color: #f472b6; /* Rosado wireframe */
+    background-color: #f472b6;
     border: 1px solid #f472b6;
     color: white;
     font-weight: bold;
@@ -164,10 +207,11 @@ body {
 /* Contenido de Resultados (Derecha) */
 .content-resultados {
     flex: 1;
+    width: 100%;
 }
 
 .banner-garantia {
-    background-color: #dcfce7; /* Verde claro */
+    background-color: #dcfce7;
     border: 1px solid #86efac;
     padding: 15px 20px;
     border-radius: 8px;
@@ -191,13 +235,16 @@ body {
 }
 
 .card-tool {
-    position: relative; /* Para posicionamiento del Tooltip */
+    position: relative;
     background-color: #ffffff;
     border: 1px solid #93c5fd;
     border-radius: 12px;
     padding: 20px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-tool:hover {
@@ -213,20 +260,31 @@ body {
 .tool-desc {
     font-size: 0.9rem;
     color: #475569;
+    margin-bottom: 15px;
 }
 
-.verificaciones {
-    list-style: none;
-    padding: 0;
-    margin: 15px 0;
-    text-align: left;
-    font-size: 0.85rem;
-    color: #065f46;
+/* Etiquetas (Badges) */
+.badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
-.verificaciones li {
-    margin-bottom: 5px;
+.badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 12px;
 }
+
+.badge-verde { background-color: #dcfce7; color: #15803d; }
+.badge-azul { background-color: #e0f2fe; color: #0369a1; }
+.badge-dorado { background-color: #fef3c7; color: #b45309; }
+.badge-freemium { background-color: #f1f5f9; color: #475569; }
+.badge-gris { background-color: #e2e8f0; color: #334155; }
+.badge-privado { background-color: #f3e8ff; color: #6b21a8; }
 
 .btn-visitar {
     display: inline-block;
@@ -240,7 +298,7 @@ body {
     font-weight: 600;
 }
 
-/* Tooltip Flotante al pasar el cursor (Hover) */
+/* Tooltip Flotante al pasar el cursor */
 .tooltip-info {
     display: none;
     position: absolute;
@@ -287,6 +345,11 @@ body {
     gap: 20px;
 }
 
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
 .social-icons img {
     width: 32px;
     height: 32px;
@@ -298,40 +361,81 @@ body {
     font-weight: 600;
 }
 
-/* Migas de pan (breadcrumb) - Estándar del equipo */
-.breadcrumb {
-    margin: 20px 40px 0 40px;
-    font-size: 0.9rem;
-}
-
-.breadcrumb ol {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 0;
-    padding: 0;
-}
-
-.breadcrumb li + li::before {
-    content: "›";
-    margin-right: 8px;
-    color: #94a3b8;
-}
-
-.breadcrumb a {
-    color: #102CAA;
-    text-decoration: none;
-}
-
-.breadcrumb a:hover {
-    text-decoration: underline;
-}
-
-/* Ajuste responsivo para celulares */
+/* Ajustes Responsivos Móviles */
 @media (max-width: 900px) {
-    .breadcrumb {
+    .header {
+        flex-wrap: wrap;
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+        order: 3;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .search-bar {
+        width: 100%;
+        order: 4;
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .breadcrumb, .hero-sec, .main-container, .section-redes, .footer {
         margin-left: 16px;
         margin-right: 16px;
+    }
+
+    .hero-sec {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar-filtros {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Ocultar tooltip flotante en táctil para evitar bloqueos */
+    .tooltip-info {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .tooltip-info::after {
+        display: none;
     }
 }
