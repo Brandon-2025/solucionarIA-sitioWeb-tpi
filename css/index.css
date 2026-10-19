@@ -1,6 +1,6 @@
 /* Estilos Globales y Desplazamiento Suave */
 html {
-    scroll-behavior: smooth; /* Permite el desplazamiento suave al hacer clic en los enlaces del menú */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,14 +16,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;          /* Unifica espacio superior/inferior */
-    height: 80px;                 /* Fija una altura idéntica para todas las páginas */
+    padding: 10px 40px;
+    min-height: 80px;
     background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-sizing: border-box;       /* Mantiene dimensiones exactas */
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .logo a {
@@ -32,10 +33,20 @@ body {
 }
 
 .logo img {
-    height: 65px;                 /* O unifica con max-height: 65px */
-    max-height: 65px;             /* Hace el logo más visible sin deformarse */
+    height: 65px;
+    max-height: 65px;
     width: auto;
     object-fit: contain;
+}
+
+/* Botón Hamburguesa oculto en desktop */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #1a365d;
 }
 
 .nav ul {
@@ -67,6 +78,8 @@ body {
     border: 1px solid #cbd5e1;
     border-radius: 20px;
     outline: none;
+    width: 100%;
+    max-width: 200px;
 }
 
 .search-bar button {
@@ -75,6 +88,7 @@ body {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 /* 2. Sección Hero */
@@ -83,7 +97,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 60px 40px;
-    background-color: #f3e8ff; /* Tono lila según tu wireframe */
+    background-color: #f3e8ff;
     margin: 20px 40px;
     border-radius: 12px;
 }
@@ -100,6 +114,8 @@ body {
 
 .hero-image img {
     max-width: 350px;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -107,7 +123,7 @@ body {
 .section-resolver, .section-herramientas {
     padding: 40px;
     margin: 20px 40px;
-    background-color: #e0f2fe; /* Tono azul claro del wireframe */
+    background-color: #e0f2fe;
     border-radius: 12px;
     text-align: center;
 }
@@ -150,7 +166,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* 4. Sección Herramientas (Tabla transparente sin líneas internas) */
+/* 4. Sección Herramientas (Tabla) */
 .table-container {
     overflow-x: auto;
     margin-top: 20px;
@@ -158,20 +174,20 @@ body {
 
 .ia-table {
     width: 100%;
-    border-collapse: collapse; /* Sin separaciones de bordes */
-    background: transparent;  /* Tabla transparente */
+    border-collapse: collapse;
+    background: transparent;
 }
 
 .ia-table th, .ia-table td {
     padding: 15px;
     text-align: left;
-    border: none; /* Elimina líneas e internas */
+    border: none;
 }
 
 .ia-table th {
     font-size: 1.1rem;
     color: #0f172a;
-    border-bottom: 2px solid rgba(0,0,0,0.1); /* Línea sutil para separar el encabezado */
+    border-bottom: 2px solid rgba(0,0,0,0.1);
 }
 
 .table-logo {
@@ -187,7 +203,7 @@ body {
 .btn-explorar {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #f472b6; /* Tono rosado del botón */
+    background-color: #f472b6;
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
@@ -206,7 +222,7 @@ body {
     gap: 20px;
     padding: 20px 40px;
     margin: 20px 40px;
-    background-color: #bbf7d0; /* Tono verde del wireframe */
+    background-color: #bbf7d0;
     border-radius: 12px;
 }
 
@@ -231,7 +247,122 @@ body {
     justify-content: space-between;
     padding: 20px 40px;
     margin: 0 40px 20px 40px;
-    background-color: #bbf7d0; /* Mismo fondo verde del segmento anterior */
+    background-color: #bbf7d0;
     border-radius: 12px;
     font-weight: 600;
+}
+
+/* ==========================================================================
+   REGLAS RESPONSIVAS (MEDIA QUERIES)
+   ========================================================================== */
+
+/* Tabletas y Pantallas Medianas (<= 992px) */
+@media screen and (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .section-redes {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Móviles Grandes y Pantallas Medianas (<= 768px) */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+        order: 3;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0 5px 0;
+        text-align: center;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+        order: 4;
+    }
+
+    .search-bar input {
+        flex: 1;
+        max-width: none;
+    }
+
+    .hero, .section-resolver, .section-herramientas, .section-redes, .footer {
+        margin: 15px 15px;
+        padding: 25px 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/* Móviles Pequeños (<= 480px) */
+@media screen and (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Transformación de tabla a tarjetas móviles */
+    .ia-table, .ia-table thead, .ia-table tbody, .ia-table th, .ia-table td, .ia-table tr {
+        display: block;
+    }
+
+    .ia-table thead {
+        display: none;
+    }
+
+    .ia-table tr {
+        margin-bottom: 20px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .ia-table td {
+        padding: 8px 5px;
+        text-align: center;
+    }
+
+    .table-logo {
+        width: 50px;
+        height: 50px;
+    }
 }

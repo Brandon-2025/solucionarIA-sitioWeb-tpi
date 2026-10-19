@@ -21,8 +21,7 @@
     <meta name="keywords"
         content="SolucionarIA, inteligencia artificial, ia, soluciones, Soluciones con IA, Herramientas de IA para automatizar tareas cotidianas, ia gratis">
     <meta name="author" content="TPI Desarrolladores">
-    <meta name="robots"
-        content="index, follow">
+    <meta name="robots" content="index, follow">
 
     <!-- Open Graph Protocol (Facebook / LinkedIn) -->
     <meta property="og:type" content="website">
@@ -109,34 +108,29 @@
         <div class="logo">
             <a href="#"><img src="imagenes/logo-encabezado.png" width="200" height="200" alt="Logo Solucionaria"></a>
         </div>
-        <nav class="nav">
+        
+        <!-- Botón Hamburguesa para Móviles -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+
+        <nav class="nav" id="nav-menu">
             <ul>
                 <li><a href="#resolver">¿Qué necesitas resolver?</a></li>
                 <li><a href="#herramientas">Herramientas</a></li>
                 <li><a href="#redes-sociales">Contáctanos</a></li>
             </ul>
         </nav>
+        
         <div class="search-bar">
-            <!-- Se agregan IDs para capturar los eventos en JavaScript -->
             <input type="text" id="input-busqueda" placeholder="Buscar herramienta o tarea...">
             <button type="button" id="btn-busqueda">🔍 Buscar</button>
         </div>
     </header>
 
-    <!-- Rastro de Migajas / Breadcrumbs 
-    <nav class="breadcrumb-container" aria-label="Rastro de migajas">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
-        </ol>
-    </nav>
-    -->
-
     <!-- Sección Hero (Presentación) -->
     <section class="hero">
         <div class="hero-text">
             <h1>SolucionarIA: Inteligencia Artificial a un Clic</h1>
-            <p>Herramientas de IA gratuitas, probadas y seguras para resolver tus tareas académicas, profesionales y
-                cotidianas.</p>
+            <p>Herramientas de IA gratuitas, probadas y seguras para resolver tus tareas académicas, profesionales y cotidianas.</p>
         </div>
         <div class="hero-image">
             <img src="imagenes/imagen-ia.png" alt="Ilustración persona usando IA">
@@ -187,96 +181,80 @@
                     <!-- 1. Estudios, Investigación y Cuestionarios -->
                     <tr>
                         <td><img src="imagenes/notebooklm-logo.png" alt="NotebookLM" class="table-logo"></td>
-                        <td><strong>NotebookLM (Google):</strong> Sube PDFs, libros o apuntes para generar guías de
-                            estudio, resúmenes automáticos y síntesis en audio sin inventar datos.</td>
-                        <td><a href="https://notebooklm.google.com" target="_blank" rel="noopener">Visitar sitio</a>
-                        </td>
+                        <td><strong>NotebookLM (Google):</strong> Sube PDFs, libros o apuntes para generar guías de estudio, resúmenes automáticos y síntesis en audio sin inventar datos.</td>
+                        <td><a href="https://notebooklm.google.com" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                     <tr>
                         <td><img src="imagenes/perplexity-logo.png" alt="Perplexity AI" class="table-logo"></td>
-                        <td><strong>Perplexity AI:</strong> Respuestas inmediatas con fuentes web citadas en tiempo real
-                            para investigaciones y trabajos.</td>
+                        <td><strong>Perplexity AI:</strong> Respuestas inmediatas con fuentes web citadas en tiempo real para investigaciones y trabajos.</td>
                         <td><a href="https://www.perplexity.ai" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                     <tr>
                         <td><img src="imagenes/claude-logo.png" alt="Claude" class="table-logo"></td>
-                        <td><strong>Claude (Anthropic):</strong> Análisis de lecturas densas, redacción de ensayos y
-                            explicación paso a paso de conceptos teóricos complejos.</td>
+                        <td><strong>Claude (Anthropic):</strong> Análisis de lecturas densas, redacción de ensayos y explicación paso a paso de conceptos teóricos complejos.</td>
                         <td><a href="https://claude.ai" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                     <tr>
                         <td><img src="imagenes/elicit-logo.png" alt="Elicit / Consensus" class="table-logo"></td>
-                        <td><strong>Elicit / Consensus:</strong> Encuentra artículos científicos y evidencia académica
-                            respondiendo preguntas directas en lenguaje sencillo.</td>
+                        <td><strong>Elicit / Consensus:</strong> Encuentra artículos científicos y evidencia académica respondiendo preguntas directas en lenguaje sencillo.</td>
                         <td><a href="https://elicit.com" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
 
                     <!-- 2. Creación de Diapositivas y Documentos -->
                     <tr>
                         <td><img src="imagenes/gamma-logo.png" alt="Gamma App" class="table-logo"></td>
-                        <td><strong>Gamma App:</strong> Genera presentaciones completas, documentos estructurados y
-                            páginas con diseño profesional a partir de un borrador de texto.</td>
+                        <td><strong>Gamma App:</strong> Genera presentaciones completas, documentos estructurados y páginas con diseño profesional a partir de un borrador de texto.</td>
                         <td><a href="https://gamma.app" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                     <tr>
                         <td><img src="imagenes/canva-logo.png" alt="Canva Magic Design" class="table-logo"></td>
-                        <td><strong>Canva Magic Design / Tome AI:</strong> Maquetación visual rápida con plantillas
-                            adaptables para exposiciones escolares o universitarias.</td>
+                        <td><strong>Canva Magic Design / Tome AI:</strong> Maquetación visual rápida con plantillas adaptables para exposiciones escolares o universitarias.</td>
                         <td><a href="https://www.canva.com" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                     <tr>
                         <td><img src="imagenes/languagetool-logo.png" alt="LanguageTool" class="table-logo"></td>
-                        <td><strong>LanguageTool / QuillBot:</strong> Corrección ortográfica, gramatical y reescritura
-                            de párrafos para mejorar el tono de tus documentos.</td>
+                        <td><strong>LanguageTool / QuillBot:</strong> Corrección ortográfica, gramatical y reescritura de párrafos para mejorar el tono de tus documentos.</td>
                         <td><a href="https://languagetool.org" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
 
                     <!-- 3. Organización Personal, Hábitos y Salud -->
                     <tr>
                         <td><img src="imagenes/caloriemama-logo.png" alt="Calorie Mama" class="table-logo"></td>
-                        <td><strong>Calorie Mama AI / Passio AI:</strong> Reconocimiento de platillos mediante fotos con
-                            el celular para estimar calorías y macronutrientes.</td>
+                        <td><strong>Calorie Mama AI / Passio AI:</strong> Reconocimiento de platillos mediante fotos con el celular para estimar calorías y macronutrientes.</td>
                         <td><a href="https://www.caloriemama.ai" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                     <tr>
                         <td><img src="imagenes/goblin-logo.png" alt="Goblin.tools" class="table-logo"></td>
-                        <td><strong>Goblin.tools:</strong> Desglosa tareas abrumadoras en pasos sencillos (Magic Todo) y
-                            ajusta el tono de tus mensajes.</td>
+                        <td><strong>Goblin.tools:</strong> Desglosa tareas abrumadoras en pasos sencillos (Magic Todo) y ajusta el tono de tus mensajes.</td>
                         <td><a href="https://goblin.tools" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                     <tr>
                         <td><img src="imagenes/todoist-logo.png" alt="Todoist IA" class="table-logo"></td>
-                        <td><strong>Todoist / Notion AI:</strong> Crea calendarios de estudio, organiza horarios y
-                            estructura rutinas diarias fácilmente.</td>
+                        <td><strong>Todoist / Notion AI:</strong> Crea calendarios de estudio, organiza horarios y estructura rutinas diarias fácilmente.</td>
                         <td><a href="https://todoist.com" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
 
                     <!-- 4. Finanzas Personales e Inversiones Básicas -->
                     <tr>
                         <td><img src="imagenes/ynab-logo.png" alt="YNAB AI" class="table-logo"></td>
-                        <td><strong>YNAB (You Need A Budget):</strong> Gestión presupuestaria basada en la web,
-                            categorización inteligente de gastos y proyección de ahorros personales.</td>
+                        <td><strong>YNAB (You Need A Budget):</strong> Gestión presupuestaria basada en la web, categorización inteligente de gastos y proyección de ahorros personales.</td>
                         <td><a href="https://www.ynab.com" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                     <tr>
                         <td><img src="imagenes/chatgpt-logo.png" alt="ChatGPT" class="table-logo"></td>
-                        <td><strong>ChatGPT:</strong> Generación de textos, lluvia de ideas, resolución de dudas
-                            complejas, asistencia en programación y automatización de tareas generales.</td>
+                        <td><strong>ChatGPT:</strong> Generación de textos, lluvia de ideas, resolución de dudas complejas, asistencia en programación y automatización de tareas generales.</td>
                         <td><a href="https://chatgpt.com" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
 
                     <!-- 5. Programación y Resolución de Código -->
                     <tr>
                         <td><img src="imagenes/deepseek-logo.png" alt="DeepSeek Coder" class="table-logo"></td>
-                        <td><strong>DeepSeek (Coder):</strong> Explicación de algoritmos, depuración de errores
-                            (debugging) y escritura de código paso a paso.</td>
+                        <td><strong>DeepSeek (Coder):</strong> Explicación de algoritmos, depuración de errores (debugging) y escritura de código paso a paso.</td>
                         <td><a href="https://www.deepseek.com/en/" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                     <tr>
                         <td><img src="imagenes/gemini-logo.png" alt="Google Gemini" class="table-logo"></td>
-                        <td><strong>Google Gemini:</strong> Asistente de IA multimodal para redacción de textos,
-                            análisis de documentos, lluvia de ideas y resolución de consultas generales desde el
-                            navegador.</td>
+                        <td><strong>Google Gemini:</strong> Asistente de IA multimodal para redacción de textos, análisis de documentos, lluvia de ideas y resolución de consultas generales desde el navegador.</td>
                         <td><a href="https://gemini.google.com" target="_blank" rel="noopener">Visitar sitio</a></td>
                     </tr>
                 </tbody>
@@ -284,8 +262,7 @@
         </div>
 
         <div class="btn-container">
-            <a href="secciones/opciones-economicas/opciones-economicas.html" class="btn-explorar">Explorar herramientas
-                accesibles</a>
+            <a href="secciones/opciones-economicas/opciones-economicas.html" class="btn-explorar">Explorar herramientas accesibles</a>
         </div>
     </section>
 
@@ -293,12 +270,10 @@
     <section id="redes-sociales" class="section-redes">
         <h3>Redes sociales oficiales:</h3>
         <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61595142584544" target="_blank" rel="noopener"
-                title="Facebook de SolucionarIA">
+            <a href="https://www.facebook.com/profile.php?id=61595142584544" target="_blank" rel="noopener" title="Facebook de SolucionarIA">
                 <img src="imagenes/redes/icono-facebook.png" alt="Facebook">
             </a>
-            <a href="https://www.instagram.com/solucionaria_?vrfl=MW1vMTJ2eXh5Ymltdw==" target="_blank" rel="noopener"
-                title="Instagram de SolucionarIA">
+            <a href="https://www.instagram.com/solucionaria_?vrfl=MW1vMTJ2eXh5Ymltdw==" target="_blank" rel="noopener" title="Instagram de SolucionarIA">
                 <img src="imagenes/redes/icono-instagram.png" alt="Instagram">
             </a>
             <a href="https://x.com/_solucionaria" target="_blank" rel="noopener" title="Twitter / X de SolucionarIA">
@@ -316,6 +291,15 @@
         <p>Hecho por: TPI desarrolladores - G06</p>
     </footer>
 
+    <!-- Script para desplegar el menú hamburguesa en móviles -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
     <!-- Enlace al script de funcionalidad del buscadorPrincipal -->
     <script src="js/buscadorPrincipal.js"></script>
 </body>
